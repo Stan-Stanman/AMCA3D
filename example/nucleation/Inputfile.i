@@ -23,13 +23,13 @@ realms:
       - surface:
           type: Gaussian
           site_density: 0.0
-          mean: 2
+          mean: 6
           standard_deviation: 0.5
 
       - bulk:
           type: Gaussian
           site_density: 10e6
-          mean: 3
+          mean: 7
           standard_deviation: 1
 
     problem_physics:

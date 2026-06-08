@@ -1,0 +1,2805 @@
+
+=====================================================================
+  ______   __       __   ______    ______    ______   _______  
+ /      \ |  \     /  \ /      \  /      \  /      \ |       \ 
+|  $$$$$$\| $$\   /  $$|  $$$$$$\|  $$$$$$\|  $$$$$$\| $$$$$$$\
+| $$__| $$| $$$\ /  $$$| $$   \$$| $$__| $$ \$$__| $$| $$  | $$
+| $$    $$| $$$$\  $$$$| $$      | $$    $$  |     $$| $$  | $$
+| $$$$$$$$| $$\$$ $$ $$| $$   __ | $$$$$$$$ __\$$$$$\| $$  | $$
+| $$  | $$| $$ \$$$| $$| $$__/  \| $$  | $$|  \__| $$| $$__/ $$
+| $$  | $$| $$  \$ | $$ \$$    $$| $$  | $$ \$$    $$| $$    $$
+ \$$   \$$ \$$      \$$  \$$$$$$  \$$   \$$  \$$$$$$  \$$$$$$$ 
+=====================================================================
+ A grain growing code targeting AM ......                
+
+TPLS: Boost, yaml_cpp                              
+
+--------------------------------------------------------------------
+             Prof.  Yanping Lian Group             
+
+Major developers:  Dr.   Yanping Lian              
+                   PhD.  Feiyu Xiong               
+
+--------------------------------------------------------------------
+
+
+Domain Size Review
+=============================
+Original Point: 
+    x0=0  y0=0  z0=0
+Lateral Size: 
+    Lx=0.03    Ly=0.03    Lz=0.03
+
+Discretization Review
+=============================
+ Cell Size: 0.0005
+ Number Cells: x=60 y=60 z=60
+
+Surface Nucleation Rule Review
+=============================
+PDF: Gaussian
+Site Density: 0
+Mean: 6
+Standard Deviation: 0.5
+
+Bulk Nucleation Rule Review
+=============================
+PDF: Gaussian
+Site Density: 1e+07
+Mean: 7
+Standard Deviation: 1
+
+Solution Options Review
+=============================
+shuffer vtr grain_ID: 0
+shuffer vtk grain_ID: 0
+random microstructure info: 0
+Output final microstructure information to file: grainInfo.txt
+Output nucleations seeds: 0
+NO microstructure info, so random generate are used to initialize microstructure!!! 
+
+VtrManager Review
+=============================
+
+Pysical Model Review
+=============================
+Problem_physics details gathered from input file and/or defaults:
+Model: RappazGandin
+Liquidus Temperature: 0
+Solidus Temperature: -1e+08
+a1: -5.44e-05
+a2: 0.000203
+a3: 0
+b1: 1
+b2: 2
+b3: 3
+Tdot: -20
+Initial Temperature: -0.2
+
+Time Integration Review
+=============================
+Time Integration details gathered from input file and/or defaults:
+Termination Time: 17.81
+Termination Step Count: 10000
+Initial Time Step: 0.001
+Time Step Factor for CA: 0.2
+
+Nucleation Sites Review
+=============================
+Surface Nucleation Sites:  
+                 should be = 0
+Bulk Nucleation Sites:  
+                 should be = 270
+Current working path is : "/home/stan/AMCA3D/example/nucleation"
+Fail to create the directory, which may exist already! 
+Fail to create the directory, which may exist already! 
+*********************************************************************
+Simulation shall commence: number of processors = 4
+*********************************************************************
+************************************************
+Time Step Count: 1  Current Time: 0.001  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 2  Current Time: 0.002  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 3  Current Time: 0.003  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 4  Current Time: 0.004  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 5  Current Time: 0.005  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 6  Current Time: 0.006  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 7  Current Time: 0.007  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 8  Current Time: 0.008  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 9  Current Time: 0.009  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 10  Current Time: 0.01  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 11  Current Time: 0.011  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 12  Current Time: 0.012  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 13  Current Time: 0.013  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 14  Current Time: 0.014  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 15  Current Time: 0.015  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 16  Current Time: 0.016  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 17  Current Time: 0.017  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 18  Current Time: 0.018  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 19  Current Time: 0.019  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 20  Current Time: 0.02  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 21  Current Time: 0.021  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 22  Current Time: 0.022  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 23  Current Time: 0.023  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 24  Current Time: 0.024  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 25  Current Time: 0.025  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 26  Current Time: 0.026  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 27  Current Time: 0.027  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 28  Current Time: 0.028  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 29  Current Time: 0.029  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 30  Current Time: 0.03  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 31  Current Time: 0.031  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 32  Current Time: 0.032  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 33  Current Time: 0.033  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 34  Current Time: 0.034  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 35  Current Time: 0.035  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 36  Current Time: 0.036  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 37  Current Time: 0.037  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 38  Current Time: 0.038  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 39  Current Time: 0.039  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 40  Current Time: 0.04  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 41  Current Time: 0.041  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 42  Current Time: 0.042  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 43  Current Time: 0.043  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 44  Current Time: 0.044  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 45  Current Time: 0.045  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 46  Current Time: 0.046  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 47  Current Time: 0.047  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 48  Current Time: 0.048  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 49  Current Time: 0.049  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 50  Current Time: 0.05  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 51  Current Time: 0.051  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 52  Current Time: 0.052  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 53  Current Time: 0.053  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 54  Current Time: 0.054  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 55  Current Time: 0.055  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 56  Current Time: 0.056  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 57  Current Time: 0.057  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 58  Current Time: 0.058  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 59  Current Time: 0.059  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 60  Current Time: 0.06  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 61  Current Time: 0.061  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 62  Current Time: 0.062  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 63  Current Time: 0.063  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 64  Current Time: 0.064  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 65  Current Time: 0.065  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 66  Current Time: 0.066  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 67  Current Time: 0.067  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 68  Current Time: 0.068  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 69  Current Time: 0.069  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 70  Current Time: 0.07  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 71  Current Time: 0.071  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 72  Current Time: 0.072  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 73  Current Time: 0.073  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 74  Current Time: 0.074  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 75  Current Time: 0.075  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 76  Current Time: 0.076  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 77  Current Time: 0.077  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 78  Current Time: 0.078  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 79  Current Time: 0.079  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 80  Current Time: 0.08  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 81  Current Time: 0.081  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 82  Current Time: 0.082  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 83  Current Time: 0.083  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 84  Current Time: 0.084  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 85  Current Time: 0.085  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 86  Current Time: 0.086  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 87  Current Time: 0.087  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 88  Current Time: 0.088  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 89  Current Time: 0.089  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 90  Current Time: 0.09  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 91  Current Time: 0.091  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 92  Current Time: 0.092  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 93  Current Time: 0.093  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 94  Current Time: 0.094  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 95  Current Time: 0.095  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 96  Current Time: 0.096  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 97  Current Time: 0.097  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 98  Current Time: 0.098  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 99  Current Time: 0.099  dtN:0.001
+ Remaining Liquid Cells: 216000
+Fail to create the directory, which may exist already! 
+************************************************
+Time Step Count: 100  Current Time: 0.1  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 101  Current Time: 0.101  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 102  Current Time: 0.102  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 103  Current Time: 0.103  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 104  Current Time: 0.104  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 105  Current Time: 0.105  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 106  Current Time: 0.106  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 107  Current Time: 0.107  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 108  Current Time: 0.108  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 109  Current Time: 0.109  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 110  Current Time: 0.11  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 111  Current Time: 0.111  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 112  Current Time: 0.112  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 113  Current Time: 0.113  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 114  Current Time: 0.114  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 115  Current Time: 0.115  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 116  Current Time: 0.116  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 117  Current Time: 0.117  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 118  Current Time: 0.118  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 119  Current Time: 0.119  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 120  Current Time: 0.12  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 121  Current Time: 0.121  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 122  Current Time: 0.122  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 123  Current Time: 0.123  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 124  Current Time: 0.124  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 125  Current Time: 0.125  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 126  Current Time: 0.126  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 127  Current Time: 0.127  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 128  Current Time: 0.128  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 129  Current Time: 0.129  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 130  Current Time: 0.13  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 131  Current Time: 0.131  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 132  Current Time: 0.132  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 133  Current Time: 0.133  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 134  Current Time: 0.134  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 135  Current Time: 0.135  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 136  Current Time: 0.136  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 137  Current Time: 0.137  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 138  Current Time: 0.138  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 139  Current Time: 0.139  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 140  Current Time: 0.14  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 141  Current Time: 0.141  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 142  Current Time: 0.142  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 143  Current Time: 0.143  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 144  Current Time: 0.144  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 145  Current Time: 0.145  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 146  Current Time: 0.146  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 147  Current Time: 0.147  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 148  Current Time: 0.148  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 149  Current Time: 0.149  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 150  Current Time: 0.15  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 151  Current Time: 0.151  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 152  Current Time: 0.152  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 153  Current Time: 0.153  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 154  Current Time: 0.154  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 155  Current Time: 0.155  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 156  Current Time: 0.156  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 157  Current Time: 0.157  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 158  Current Time: 0.158  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 159  Current Time: 0.159  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 160  Current Time: 0.16  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 161  Current Time: 0.161  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 162  Current Time: 0.162  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 163  Current Time: 0.163  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 164  Current Time: 0.164  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 165  Current Time: 0.165  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 166  Current Time: 0.166  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 167  Current Time: 0.167  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 168  Current Time: 0.168  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 169  Current Time: 0.169  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 170  Current Time: 0.17  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 171  Current Time: 0.171  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 172  Current Time: 0.172  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 173  Current Time: 0.173  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 174  Current Time: 0.174  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 175  Current Time: 0.175  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 176  Current Time: 0.176  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 177  Current Time: 0.177  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 178  Current Time: 0.178  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 179  Current Time: 0.179  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 180  Current Time: 0.18  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 181  Current Time: 0.181  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 182  Current Time: 0.182  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 183  Current Time: 0.183  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 184  Current Time: 0.184  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 185  Current Time: 0.185  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 186  Current Time: 0.186  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 187  Current Time: 0.187  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 188  Current Time: 0.188  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 189  Current Time: 0.189  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 190  Current Time: 0.19  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 191  Current Time: 0.191  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 192  Current Time: 0.192  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 193  Current Time: 0.193  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 194  Current Time: 0.194  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 195  Current Time: 0.195  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 196  Current Time: 0.196  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 197  Current Time: 0.197  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 198  Current Time: 0.198  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 199  Current Time: 0.199  dtN:0.001
+ Remaining Liquid Cells: 216000
+Fail to create the directory, which may exist already! 
+************************************************
+Time Step Count: 200  Current Time: 0.2  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 201  Current Time: 0.201  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 202  Current Time: 0.202  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 203  Current Time: 0.203  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 204  Current Time: 0.204  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 205  Current Time: 0.205  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 206  Current Time: 0.206  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 207  Current Time: 0.207  dtN:0.001
+ Remaining Liquid Cells: 216000
+************************************************
+Time Step Count: 208  Current Time: 0.208  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 209  Current Time: 0.209  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 210  Current Time: 0.21  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 211  Current Time: 0.211  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 212  Current Time: 0.212  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 213  Current Time: 0.213  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 214  Current Time: 0.214  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 215  Current Time: 0.215  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 216  Current Time: 0.216  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 217  Current Time: 0.217  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 218  Current Time: 0.218  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 219  Current Time: 0.219  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 220  Current Time: 0.22  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 221  Current Time: 0.221  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 222  Current Time: 0.222  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 223  Current Time: 0.223  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 224  Current Time: 0.224  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 225  Current Time: 0.225  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 226  Current Time: 0.226  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 227  Current Time: 0.227  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 228  Current Time: 0.228  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 229  Current Time: 0.229  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 230  Current Time: 0.23  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 231  Current Time: 0.231  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 232  Current Time: 0.232  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 233  Current Time: 0.233  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 234  Current Time: 0.234  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 235  Current Time: 0.235  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 236  Current Time: 0.236  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 237  Current Time: 0.237  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 238  Current Time: 0.238  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 239  Current Time: 0.239  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 240  Current Time: 0.24  dtN:0.001
+ Remaining Liquid Cells: 215996
+************************************************
+Time Step Count: 241  Current Time: 0.241  dtN:0.001
+ Remaining Liquid Cells: 215992
+************************************************
+Time Step Count: 242  Current Time: 0.242  dtN:0.001
+ Remaining Liquid Cells: 215988
+************************************************
+Time Step Count: 243  Current Time: 0.243  dtN:0.001
+ Remaining Liquid Cells: 215988
+************************************************
+Time Step Count: 244  Current Time: 0.244  dtN:0.001
+ Remaining Liquid Cells: 215988
+************************************************
+Time Step Count: 245  Current Time: 0.245  dtN:0.001
+ Remaining Liquid Cells: 215988
+************************************************
+Time Step Count: 246  Current Time: 0.246  dtN:0.001
+ Remaining Liquid Cells: 215988
+************************************************
+Time Step Count: 247  Current Time: 0.247  dtN:0.001
+ Remaining Liquid Cells: 215988
+************************************************
+Time Step Count: 248  Current Time: 0.248  dtN:0.001
+ Remaining Liquid Cells: 215988
+************************************************
+Time Step Count: 249  Current Time: 0.249  dtN:0.001
+ Remaining Liquid Cells: 215988
+************************************************
+Time Step Count: 250  Current Time: 0.25  dtN:0.001
+ Remaining Liquid Cells: 215988
+************************************************
+Time Step Count: 251  Current Time: 0.251  dtN:0.001
+ Remaining Liquid Cells: 215988
+************************************************
+Time Step Count: 252  Current Time: 0.252  dtN:0.001
+ Remaining Liquid Cells: 215988
+************************************************
+Time Step Count: 253  Current Time: 0.253  dtN:0.001
+ Remaining Liquid Cells: 215988
+************************************************
+Time Step Count: 254  Current Time: 0.254  dtN:0.001
+ Remaining Liquid Cells: 215988
+************************************************
+Time Step Count: 255  Current Time: 0.255  dtN:0.001
+ Remaining Liquid Cells: 215988
+************************************************
+Time Step Count: 256  Current Time: 0.256  dtN:0.001
+ Remaining Liquid Cells: 215988
+************************************************
+Time Step Count: 257  Current Time: 0.257  dtN:0.001
+ Remaining Liquid Cells: 215988
+************************************************
+Time Step Count: 258  Current Time: 0.258  dtN:0.001
+ Remaining Liquid Cells: 215988
+************************************************
+Time Step Count: 259  Current Time: 0.259  dtN:0.001
+ Remaining Liquid Cells: 215988
+************************************************
+Time Step Count: 260  Current Time: 0.26  dtN:0.001
+ Remaining Liquid Cells: 215988
+************************************************
+Time Step Count: 261  Current Time: 0.261  dtN:0.001
+ Remaining Liquid Cells: 215988
+************************************************
+Time Step Count: 262  Current Time: 0.262  dtN:0.001
+ Remaining Liquid Cells: 215984
+************************************************
+Time Step Count: 263  Current Time: 0.263  dtN:0.001
+ Remaining Liquid Cells: 215984
+************************************************
+Time Step Count: 264  Current Time: 0.264  dtN:0.001
+ Remaining Liquid Cells: 215984
+************************************************
+Time Step Count: 265  Current Time: 0.265  dtN:0.001
+ Remaining Liquid Cells: 215984
+************************************************
+Time Step Count: 266  Current Time: 0.266  dtN:0.001
+ Remaining Liquid Cells: 215984
+************************************************
+Time Step Count: 267  Current Time: 0.267  dtN:0.001
+ Remaining Liquid Cells: 215984
+************************************************
+Time Step Count: 268  Current Time: 0.268  dtN:0.001
+ Remaining Liquid Cells: 215984
+************************************************
+Time Step Count: 269  Current Time: 0.269  dtN:0.001
+ Remaining Liquid Cells: 215984
+************************************************
+Time Step Count: 270  Current Time: 0.27  dtN:0.001
+ Remaining Liquid Cells: 215980
+************************************************
+Time Step Count: 271  Current Time: 0.271  dtN:0.001
+ Remaining Liquid Cells: 215980
+************************************************
+Time Step Count: 272  Current Time: 0.272  dtN:0.001
+ Remaining Liquid Cells: 215980
+************************************************
+Time Step Count: 273  Current Time: 0.273  dtN:0.001
+ Remaining Liquid Cells: 215980
+************************************************
+Time Step Count: 274  Current Time: 0.274  dtN:0.001
+ Remaining Liquid Cells: 215980
+************************************************
+Time Step Count: 275  Current Time: 0.275  dtN:0.001
+ Remaining Liquid Cells: 215976
+************************************************
+Time Step Count: 276  Current Time: 0.276  dtN:0.001
+ Remaining Liquid Cells: 215972
+************************************************
+Time Step Count: 277  Current Time: 0.277  dtN:0.001
+ Remaining Liquid Cells: 215972
+************************************************
+Time Step Count: 278  Current Time: 0.278  dtN:0.001
+ Remaining Liquid Cells: 215972
+************************************************
+Time Step Count: 279  Current Time: 0.279  dtN:0.001
+ Remaining Liquid Cells: 215972
+************************************************
+Time Step Count: 280  Current Time: 0.28  dtN:0.001
+ Remaining Liquid Cells: 215972
+************************************************
+Time Step Count: 281  Current Time: 0.281  dtN:0.001
+ Remaining Liquid Cells: 215972
+************************************************
+Time Step Count: 282  Current Time: 0.282  dtN:0.001
+ Remaining Liquid Cells: 215968
+************************************************
+Time Step Count: 283  Current Time: 0.283  dtN:0.001
+ Remaining Liquid Cells: 215968
+************************************************
+Time Step Count: 284  Current Time: 0.284  dtN:0.001
+ Remaining Liquid Cells: 215968
+************************************************
+Time Step Count: 285  Current Time: 0.285  dtN:0.001
+ Remaining Liquid Cells: 215968
+************************************************
+Time Step Count: 286  Current Time: 0.286  dtN:0.001
+ Remaining Liquid Cells: 215968
+************************************************
+Time Step Count: 287  Current Time: 0.287  dtN:0.001
+ Remaining Liquid Cells: 215964
+************************************************
+Time Step Count: 288  Current Time: 0.288  dtN:0.001
+ Remaining Liquid Cells: 215960
+************************************************
+Time Step Count: 289  Current Time: 0.289  dtN:0.001
+ Remaining Liquid Cells: 215960
+************************************************
+Time Step Count: 290  Current Time: 0.29  dtN:0.001
+ Remaining Liquid Cells: 215960
+************************************************
+Time Step Count: 291  Current Time: 0.291  dtN:0.001
+ Remaining Liquid Cells: 215960
+************************************************
+Time Step Count: 292  Current Time: 0.292  dtN:0.001
+ Remaining Liquid Cells: 215956
+************************************************
+Time Step Count: 293  Current Time: 0.293  dtN:0.001
+ Remaining Liquid Cells: 215952
+************************************************
+Time Step Count: 294  Current Time: 0.294  dtN:0.001
+ Remaining Liquid Cells: 215952
+************************************************
+Time Step Count: 295  Current Time: 0.295  dtN:0.001
+ Remaining Liquid Cells: 215948
+************************************************
+Time Step Count: 296  Current Time: 0.296  dtN:0.001
+ Remaining Liquid Cells: 215948
+************************************************
+Time Step Count: 297  Current Time: 0.297  dtN:0.001
+ Remaining Liquid Cells: 215944
+************************************************
+Time Step Count: 298  Current Time: 0.298  dtN:0.001
+ Remaining Liquid Cells: 215944
+************************************************
+Time Step Count: 299  Current Time: 0.299  dtN:0.001
+ Remaining Liquid Cells: 215944
+Fail to create the directory, which may exist already! 
+************************************************
+Time Step Count: 300  Current Time: 0.3  dtN:0.001
+ Remaining Liquid Cells: 215944
+************************************************
+Time Step Count: 301  Current Time: 0.301  dtN:0.001
+ Remaining Liquid Cells: 215944
+************************************************
+Time Step Count: 302  Current Time: 0.302  dtN:0.001
+ Remaining Liquid Cells: 215944
+************************************************
+Time Step Count: 303  Current Time: 0.303  dtN:0.001
+ Remaining Liquid Cells: 215940
+************************************************
+Time Step Count: 304  Current Time: 0.304  dtN:0.001
+ Remaining Liquid Cells: 215936
+************************************************
+Time Step Count: 305  Current Time: 0.305  dtN:0.001
+ Remaining Liquid Cells: 215936
+************************************************
+Time Step Count: 306  Current Time: 0.306  dtN:0.001
+ Remaining Liquid Cells: 215936
+************************************************
+Time Step Count: 307  Current Time: 0.307  dtN:0.001
+ Remaining Liquid Cells: 215932
+************************************************
+Time Step Count: 308  Current Time: 0.308  dtN:0.001
+ Remaining Liquid Cells: 215928
+************************************************
+Time Step Count: 309  Current Time: 0.309  dtN:0.001
+ Remaining Liquid Cells: 215928
+************************************************
+Time Step Count: 310  Current Time: 0.31  dtN:0.001
+ Remaining Liquid Cells: 215928
+************************************************
+Time Step Count: 311  Current Time: 0.311  dtN:0.001
+ Remaining Liquid Cells: 215924
+************************************************
+Time Step Count: 312  Current Time: 0.312  dtN:0.001
+ Remaining Liquid Cells: 215924
+************************************************
+Time Step Count: 313  Current Time: 0.313  dtN:0.001
+ Remaining Liquid Cells: 215924
+************************************************
+Time Step Count: 314  Current Time: 0.314  dtN:0.001
+ Remaining Liquid Cells: 215924
+************************************************
+Time Step Count: 315  Current Time: 0.315  dtN:0.001
+ Remaining Liquid Cells: 215916
+************************************************
+Time Step Count: 316  Current Time: 0.316  dtN:0.001
+ Remaining Liquid Cells: 215916
+************************************************
+Time Step Count: 317  Current Time: 0.317  dtN:0.001
+ Remaining Liquid Cells: 215916
+************************************************
+Time Step Count: 318  Current Time: 0.318  dtN:0.001
+ Remaining Liquid Cells: 215912
+************************************************
+Time Step Count: 319  Current Time: 0.319  dtN:0.001
+ Remaining Liquid Cells: 215912
+************************************************
+Time Step Count: 320  Current Time: 0.32  dtN:0.001
+ Remaining Liquid Cells: 215912
+************************************************
+Time Step Count: 321  Current Time: 0.321  dtN:0.001
+ Remaining Liquid Cells: 215908
+************************************************
+Time Step Count: 322  Current Time: 0.322  dtN:0.001
+ Remaining Liquid Cells: 215906
+************************************************
+Time Step Count: 323  Current Time: 0.323  dtN:0.001
+ Remaining Liquid Cells: 215906
+************************************************
+Time Step Count: 324  Current Time: 0.324  dtN:0.001
+ Remaining Liquid Cells: 215906
+************************************************
+Time Step Count: 325  Current Time: 0.325  dtN:0.001
+ Remaining Liquid Cells: 215896
+************************************************
+Time Step Count: 326  Current Time: 0.326  dtN:0.001
+ Remaining Liquid Cells: 215892
+************************************************
+Time Step Count: 327  Current Time: 0.327  dtN:0.001
+ Remaining Liquid Cells: 215888
+************************************************
+Time Step Count: 328  Current Time: 0.328  dtN:0.001
+ Remaining Liquid Cells: 215888
+************************************************
+Time Step Count: 329  Current Time: 0.329  dtN:0.001
+ Remaining Liquid Cells: 215888
+************************************************
+Time Step Count: 330  Current Time: 0.33  dtN:0.001
+ Remaining Liquid Cells: 215882
+************************************************
+Time Step Count: 331  Current Time: 0.331  dtN:0.001
+ Remaining Liquid Cells: 215882
+************************************************
+Time Step Count: 332  Current Time: 0.332  dtN:0.001
+ Remaining Liquid Cells: 215876
+************************************************
+Time Step Count: 333  Current Time: 0.333  dtN:0.001
+ Remaining Liquid Cells: 215872
+************************************************
+Time Step Count: 334  Current Time: 0.334  dtN:0.001
+ Remaining Liquid Cells: 215870
+************************************************
+Time Step Count: 335  Current Time: 0.335  dtN:0.001
+ Remaining Liquid Cells: 215856
+************************************************
+Time Step Count: 336  Current Time: 0.336  dtN:0.001
+ Remaining Liquid Cells: 215848
+************************************************
+Time Step Count: 337  Current Time: 0.337  dtN:0.001
+ Remaining Liquid Cells: 215842
+************************************************
+Time Step Count: 338  Current Time: 0.338  dtN:0.001
+ Remaining Liquid Cells: 215836
+************************************************
+Time Step Count: 339  Current Time: 0.339  dtN:0.001
+ Remaining Liquid Cells: 215832
+************************************************
+Time Step Count: 340  Current Time: 0.34  dtN:0.001
+ Remaining Liquid Cells: 215826
+************************************************
+Time Step Count: 341  Current Time: 0.341  dtN:0.001
+ Remaining Liquid Cells: 215812
+************************************************
+Time Step Count: 342  Current Time: 0.342  dtN:0.001
+ Remaining Liquid Cells: 215808
+************************************************
+Time Step Count: 343  Current Time: 0.343  dtN:0.001
+ Remaining Liquid Cells: 215798
+************************************************
+Time Step Count: 344  Current Time: 0.344  dtN:0.001
+ Remaining Liquid Cells: 215790
+************************************************
+Time Step Count: 345  Current Time: 0.345  dtN:0.001
+ Remaining Liquid Cells: 215786
+************************************************
+Time Step Count: 346  Current Time: 0.346  dtN:0.001
+ Remaining Liquid Cells: 215782
+************************************************
+Time Step Count: 347  Current Time: 0.347  dtN:0.001
+ Remaining Liquid Cells: 215780
+************************************************
+Time Step Count: 348  Current Time: 0.348  dtN:0.001
+ Remaining Liquid Cells: 215778
+************************************************
+Time Step Count: 349  Current Time: 0.349  dtN:0.001
+ Remaining Liquid Cells: 215766
+************************************************
+Time Step Count: 350  Current Time: 0.35  dtN:0.001
+ Remaining Liquid Cells: 215752
+************************************************
+Time Step Count: 351  Current Time: 0.351  dtN:0.001
+ Remaining Liquid Cells: 215748
+************************************************
+Time Step Count: 352  Current Time: 0.352  dtN:0.001
+ Remaining Liquid Cells: 215734
+************************************************
+Time Step Count: 353  Current Time: 0.353  dtN:0.001
+ Remaining Liquid Cells: 215722
+************************************************
+Time Step Count: 354  Current Time: 0.354  dtN:0.001
+ Remaining Liquid Cells: 215714
+************************************************
+Time Step Count: 355  Current Time: 0.355  dtN:0.001
+ Remaining Liquid Cells: 215704
+************************************************
+Time Step Count: 356  Current Time: 0.356  dtN:0.001
+ Remaining Liquid Cells: 215694
+************************************************
+Time Step Count: 357  Current Time: 0.357  dtN:0.001
+ Remaining Liquid Cells: 215690
+************************************************
+Time Step Count: 358  Current Time: 0.358  dtN:0.001
+ Remaining Liquid Cells: 215686
+************************************************
+Time Step Count: 359  Current Time: 0.359  dtN:0.001
+ Remaining Liquid Cells: 215678
+************************************************
+Time Step Count: 360  Current Time: 0.36  dtN:0.001
+ Remaining Liquid Cells: 215668
+************************************************
+Time Step Count: 361  Current Time: 0.361  dtN:0.001
+ Remaining Liquid Cells: 215662
+************************************************
+Time Step Count: 362  Current Time: 0.362  dtN:0.001
+ Remaining Liquid Cells: 215656
+************************************************
+Time Step Count: 363  Current Time: 0.363  dtN:0.001
+ Remaining Liquid Cells: 215636
+************************************************
+Time Step Count: 364  Current Time: 0.364  dtN:0.001
+ Remaining Liquid Cells: 215618
+************************************************
+Time Step Count: 365  Current Time: 0.365  dtN:0.001
+ Remaining Liquid Cells: 215600
+************************************************
+Time Step Count: 366  Current Time: 0.366  dtN:0.001
+ Remaining Liquid Cells: 215586
+************************************************
+Time Step Count: 367  Current Time: 0.367  dtN:0.001
+ Remaining Liquid Cells: 215564
+************************************************
+Time Step Count: 368  Current Time: 0.368  dtN:0.001
+ Remaining Liquid Cells: 215548
+************************************************
+Time Step Count: 369  Current Time: 0.369  dtN:0.001
+ Remaining Liquid Cells: 215528
+************************************************
+Time Step Count: 370  Current Time: 0.37  dtN:0.001
+ Remaining Liquid Cells: 215486
+************************************************
+Time Step Count: 371  Current Time: 0.371  dtN:0.001
+ Remaining Liquid Cells: 215472
+************************************************
+Time Step Count: 372  Current Time: 0.372  dtN:0.001
+ Remaining Liquid Cells: 215452
+************************************************
+Time Step Count: 373  Current Time: 0.373  dtN:0.001
+ Remaining Liquid Cells: 215433
+************************************************
+Time Step Count: 374  Current Time: 0.374  dtN:0.001
+ Remaining Liquid Cells: 215402
+************************************************
+Time Step Count: 375  Current Time: 0.375  dtN:0.001
+ Remaining Liquid Cells: 215364
+************************************************
+Time Step Count: 376  Current Time: 0.376  dtN:0.001
+ Remaining Liquid Cells: 215348
+************************************************
+Time Step Count: 377  Current Time: 0.377  dtN:0.001
+ Remaining Liquid Cells: 215320
+************************************************
+Time Step Count: 378  Current Time: 0.378  dtN:0.001
+ Remaining Liquid Cells: 215282
+************************************************
+Time Step Count: 379  Current Time: 0.379  dtN:0.001
+ Remaining Liquid Cells: 215248
+************************************************
+Time Step Count: 380  Current Time: 0.38  dtN:0.001
+ Remaining Liquid Cells: 215230
+************************************************
+Time Step Count: 381  Current Time: 0.381  dtN:0.001
+ Remaining Liquid Cells: 215187
+************************************************
+Time Step Count: 382  Current Time: 0.382  dtN:0.001
+ Remaining Liquid Cells: 215141
+************************************************
+Time Step Count: 383  Current Time: 0.383  dtN:0.001
+ Remaining Liquid Cells: 215104
+************************************************
+Time Step Count: 384  Current Time: 0.384  dtN:0.001
+ Remaining Liquid Cells: 215080
+************************************************
+Time Step Count: 385  Current Time: 0.385  dtN:0.001
+ Remaining Liquid Cells: 215064
+************************************************
+Time Step Count: 386  Current Time: 0.386  dtN:0.001
+ Remaining Liquid Cells: 215050
+************************************************
+Time Step Count: 387  Current Time: 0.387  dtN:0.001
+ Remaining Liquid Cells: 214997
+************************************************
+Time Step Count: 388  Current Time: 0.388  dtN:0.001
+ Remaining Liquid Cells: 214942
+************************************************
+Time Step Count: 389  Current Time: 0.389  dtN:0.001
+ Remaining Liquid Cells: 214891
+************************************************
+Time Step Count: 390  Current Time: 0.39  dtN:0.001
+ Remaining Liquid Cells: 214843
+************************************************
+Time Step Count: 391  Current Time: 0.391  dtN:0.001
+ Remaining Liquid Cells: 214805
+************************************************
+Time Step Count: 392  Current Time: 0.392  dtN:0.001
+ Remaining Liquid Cells: 214752
+************************************************
+Time Step Count: 393  Current Time: 0.393  dtN:0.001
+ Remaining Liquid Cells: 214698
+************************************************
+Time Step Count: 394  Current Time: 0.394  dtN:0.001
+ Remaining Liquid Cells: 214651
+************************************************
+Time Step Count: 395  Current Time: 0.395  dtN:0.001
+ Remaining Liquid Cells: 214608
+************************************************
+Time Step Count: 396  Current Time: 0.396  dtN:0.001
+ Remaining Liquid Cells: 214566
+************************************************
+Time Step Count: 397  Current Time: 0.397  dtN:0.001
+ Remaining Liquid Cells: 214490
+************************************************
+Time Step Count: 398  Current Time: 0.398  dtN:0.001
+ Remaining Liquid Cells: 214410
+************************************************
+Time Step Count: 399  Current Time: 0.399  dtN:0.001
+ Remaining Liquid Cells: 214348
+Fail to create the directory, which may exist already! 
+************************************************
+Time Step Count: 400  Current Time: 0.4  dtN:0.001
+ Remaining Liquid Cells: 214284
+************************************************
+Time Step Count: 401  Current Time: 0.401  dtN:0.001
+ Remaining Liquid Cells: 214194
+************************************************
+Time Step Count: 402  Current Time: 0.402  dtN:0.001
+ Remaining Liquid Cells: 214123
+************************************************
+Time Step Count: 403  Current Time: 0.403  dtN:0.001
+ Remaining Liquid Cells: 214022
+************************************************
+Time Step Count: 404  Current Time: 0.404  dtN:0.001
+ Remaining Liquid Cells: 213971
+************************************************
+Time Step Count: 405  Current Time: 0.405  dtN:0.001
+ Remaining Liquid Cells: 213886
+************************************************
+Time Step Count: 406  Current Time: 0.406  dtN:0.001
+ Remaining Liquid Cells: 213808
+************************************************
+Time Step Count: 407  Current Time: 0.407  dtN:0.001
+ Remaining Liquid Cells: 213733
+************************************************
+Time Step Count: 408  Current Time: 0.408  dtN:0.001
+ Remaining Liquid Cells: 213614
+************************************************
+Time Step Count: 409  Current Time: 0.409  dtN:0.001
+ Remaining Liquid Cells: 213525
+************************************************
+Time Step Count: 410  Current Time: 0.41  dtN:0.001
+ Remaining Liquid Cells: 213444
+************************************************
+Time Step Count: 411  Current Time: 0.411  dtN:0.001
+ Remaining Liquid Cells: 213363
+************************************************
+Time Step Count: 412  Current Time: 0.412  dtN:0.001
+ Remaining Liquid Cells: 213248
+************************************************
+Time Step Count: 413  Current Time: 0.413  dtN:0.001
+ Remaining Liquid Cells: 213131
+************************************************
+Time Step Count: 414  Current Time: 0.414  dtN:0.001
+ Remaining Liquid Cells: 213008
+************************************************
+Time Step Count: 415  Current Time: 0.415  dtN:0.001
+ Remaining Liquid Cells: 212909
+************************************************
+Time Step Count: 416  Current Time: 0.416  dtN:0.001
+ Remaining Liquid Cells: 212795
+************************************************
+Time Step Count: 417  Current Time: 0.417  dtN:0.001
+ Remaining Liquid Cells: 212696
+************************************************
+Time Step Count: 418  Current Time: 0.418  dtN:0.001
+ Remaining Liquid Cells: 212582
+************************************************
+Time Step Count: 419  Current Time: 0.419  dtN:0.001
+ Remaining Liquid Cells: 212475
+************************************************
+Time Step Count: 420  Current Time: 0.42  dtN:0.001
+ Remaining Liquid Cells: 212369
+************************************************
+Time Step Count: 421  Current Time: 0.421  dtN:0.001
+ Remaining Liquid Cells: 212264
+************************************************
+Time Step Count: 422  Current Time: 0.422  dtN:0.001
+ Remaining Liquid Cells: 212161
+************************************************
+Time Step Count: 423  Current Time: 0.423  dtN:0.001
+ Remaining Liquid Cells: 212009
+************************************************
+Time Step Count: 424  Current Time: 0.424  dtN:0.001
+ Remaining Liquid Cells: 211881
+************************************************
+Time Step Count: 425  Current Time: 0.425  dtN:0.001
+ Remaining Liquid Cells: 211709
+************************************************
+Time Step Count: 426  Current Time: 0.426  dtN:0.001
+ Remaining Liquid Cells: 211584
+************************************************
+Time Step Count: 427  Current Time: 0.427  dtN:0.001
+ Remaining Liquid Cells: 211423
+************************************************
+Time Step Count: 428  Current Time: 0.428  dtN:0.001
+ Remaining Liquid Cells: 211277
+************************************************
+Time Step Count: 429  Current Time: 0.429  dtN:0.001
+ Remaining Liquid Cells: 211116
+************************************************
+Time Step Count: 430  Current Time: 0.43  dtN:0.001
+ Remaining Liquid Cells: 210959
+************************************************
+Time Step Count: 431  Current Time: 0.431  dtN:0.001
+ Remaining Liquid Cells: 210778
+************************************************
+Time Step Count: 432  Current Time: 0.432  dtN:0.001
+ Remaining Liquid Cells: 210623
+************************************************
+Time Step Count: 433  Current Time: 0.433  dtN:0.001
+ Remaining Liquid Cells: 210455
+************************************************
+Time Step Count: 434  Current Time: 0.434  dtN:0.001
+ Remaining Liquid Cells: 210234
+************************************************
+Time Step Count: 435  Current Time: 0.435  dtN:0.001
+ Remaining Liquid Cells: 210036
+************************************************
+Time Step Count: 436  Current Time: 0.436  dtN:0.001
+ Remaining Liquid Cells: 209878
+************************************************
+Time Step Count: 437  Current Time: 0.437  dtN:0.001
+ Remaining Liquid Cells: 209677
+************************************************
+Time Step Count: 438  Current Time: 0.438  dtN:0.001
+ Remaining Liquid Cells: 209485
+************************************************
+Time Step Count: 439  Current Time: 0.439  dtN:0.001
+ Remaining Liquid Cells: 209297
+************************************************
+Time Step Count: 440  Current Time: 0.44  dtN:0.001
+ Remaining Liquid Cells: 209114
+************************************************
+Time Step Count: 441  Current Time: 0.441  dtN:0.001
+ Remaining Liquid Cells: 208920
+************************************************
+Time Step Count: 442  Current Time: 0.442  dtN:0.001
+ Remaining Liquid Cells: 208691
+************************************************
+Time Step Count: 443  Current Time: 0.443  dtN:0.001
+ Remaining Liquid Cells: 208483
+************************************************
+Time Step Count: 444  Current Time: 0.444  dtN:0.001
+ Remaining Liquid Cells: 208285
+************************************************
+Time Step Count: 445  Current Time: 0.445  dtN:0.001
+ Remaining Liquid Cells: 208067
+************************************************
+Time Step Count: 446  Current Time: 0.446  dtN:0.001
+ Remaining Liquid Cells: 207842
+************************************************
+Time Step Count: 447  Current Time: 0.447  dtN:0.001
+ Remaining Liquid Cells: 207642
+************************************************
+Time Step Count: 448  Current Time: 0.448  dtN:0.001
+ Remaining Liquid Cells: 207388
+************************************************
+Time Step Count: 449  Current Time: 0.449  dtN:0.001
+ Remaining Liquid Cells: 207104
+************************************************
+Time Step Count: 450  Current Time: 0.45  dtN:0.001
+ Remaining Liquid Cells: 206823
+************************************************
+Time Step Count: 451  Current Time: 0.451  dtN:0.001
+ Remaining Liquid Cells: 206569
+************************************************
+Time Step Count: 452  Current Time: 0.452  dtN:0.001
+ Remaining Liquid Cells: 206331
+************************************************
+Time Step Count: 453  Current Time: 0.453  dtN:0.001
+ Remaining Liquid Cells: 206048
+************************************************
+Time Step Count: 454  Current Time: 0.454  dtN:0.001
+ Remaining Liquid Cells: 205766
+************************************************
+Time Step Count: 455  Current Time: 0.455  dtN:0.001
+ Remaining Liquid Cells: 205434
+************************************************
+Time Step Count: 456  Current Time: 0.456  dtN:0.001
+ Remaining Liquid Cells: 205097
+************************************************
+Time Step Count: 457  Current Time: 0.457  dtN:0.001
+ Remaining Liquid Cells: 204774
+************************************************
+Time Step Count: 458  Current Time: 0.458  dtN:0.001
+ Remaining Liquid Cells: 204491
+************************************************
+Time Step Count: 459  Current Time: 0.459  dtN:0.001
+ Remaining Liquid Cells: 204205
+************************************************
+Time Step Count: 460  Current Time: 0.46  dtN:0.001
+ Remaining Liquid Cells: 203873
+************************************************
+Time Step Count: 461  Current Time: 0.461  dtN:0.001
+ Remaining Liquid Cells: 203534
+************************************************
+Time Step Count: 462  Current Time: 0.462  dtN:0.001
+ Remaining Liquid Cells: 203220
+************************************************
+Time Step Count: 463  Current Time: 0.463  dtN:0.001
+ Remaining Liquid Cells: 202846
+************************************************
+Time Step Count: 464  Current Time: 0.464  dtN:0.001
+ Remaining Liquid Cells: 202540
+************************************************
+Time Step Count: 465  Current Time: 0.465  dtN:0.001
+ Remaining Liquid Cells: 202226
+************************************************
+Time Step Count: 466  Current Time: 0.466  dtN:0.001
+ Remaining Liquid Cells: 201872
+************************************************
+Time Step Count: 467  Current Time: 0.467  dtN:0.001
+ Remaining Liquid Cells: 201520
+************************************************
+Time Step Count: 468  Current Time: 0.468  dtN:0.001
+ Remaining Liquid Cells: 201160
+************************************************
+Time Step Count: 469  Current Time: 0.469  dtN:0.001
+ Remaining Liquid Cells: 200809
+************************************************
+Time Step Count: 470  Current Time: 0.47  dtN:0.001
+ Remaining Liquid Cells: 200449
+************************************************
+Time Step Count: 471  Current Time: 0.471  dtN:0.001
+ Remaining Liquid Cells: 200046
+************************************************
+Time Step Count: 472  Current Time: 0.472  dtN:0.001
+ Remaining Liquid Cells: 199617
+************************************************
+Time Step Count: 473  Current Time: 0.473  dtN:0.001
+ Remaining Liquid Cells: 199270
+************************************************
+Time Step Count: 474  Current Time: 0.474  dtN:0.001
+ Remaining Liquid Cells: 198911
+************************************************
+Time Step Count: 475  Current Time: 0.475  dtN:0.001
+ Remaining Liquid Cells: 198449
+************************************************
+Time Step Count: 476  Current Time: 0.476  dtN:0.001
+ Remaining Liquid Cells: 198062
+************************************************
+Time Step Count: 477  Current Time: 0.477  dtN:0.001
+ Remaining Liquid Cells: 197605
+************************************************
+Time Step Count: 478  Current Time: 0.478  dtN:0.001
+ Remaining Liquid Cells: 197141
+************************************************
+Time Step Count: 479  Current Time: 0.479  dtN:0.001
+ Remaining Liquid Cells: 196709
+************************************************
+Time Step Count: 480  Current Time: 0.48  dtN:0.001
+ Remaining Liquid Cells: 196300
+************************************************
+Time Step Count: 481  Current Time: 0.481  dtN:0.001
+ Remaining Liquid Cells: 195870
+************************************************
+Time Step Count: 482  Current Time: 0.482  dtN:0.001
+ Remaining Liquid Cells: 195470
+************************************************
+Time Step Count: 483  Current Time: 0.483  dtN:0.001
+ Remaining Liquid Cells: 195004
+************************************************
+Time Step Count: 484  Current Time: 0.484  dtN:0.001
+ Remaining Liquid Cells: 194534
+************************************************
+Time Step Count: 485  Current Time: 0.485  dtN:0.001
+ Remaining Liquid Cells: 194106
+************************************************
+Time Step Count: 486  Current Time: 0.486  dtN:0.001
+ Remaining Liquid Cells: 193629
+************************************************
+Time Step Count: 487  Current Time: 0.487  dtN:0.001
+ Remaining Liquid Cells: 193164
+************************************************
+Time Step Count: 488  Current Time: 0.488  dtN:0.001
+ Remaining Liquid Cells: 192698
+************************************************
+Time Step Count: 489  Current Time: 0.489  dtN:0.001
+ Remaining Liquid Cells: 192230
+************************************************
+Time Step Count: 490  Current Time: 0.49  dtN:0.001
+ Remaining Liquid Cells: 191771
+************************************************
+Time Step Count: 491  Current Time: 0.491  dtN:0.001
+ Remaining Liquid Cells: 191236
+************************************************
+Time Step Count: 492  Current Time: 0.492  dtN:0.001
+ Remaining Liquid Cells: 190714
+************************************************
+Time Step Count: 493  Current Time: 0.493  dtN:0.001
+ Remaining Liquid Cells: 190232
+************************************************
+Time Step Count: 494  Current Time: 0.494  dtN:0.001
+ Remaining Liquid Cells: 189699
+************************************************
+Time Step Count: 495  Current Time: 0.495  dtN:0.001
+ Remaining Liquid Cells: 189226
+************************************************
+Time Step Count: 496  Current Time: 0.496  dtN:0.001
+ Remaining Liquid Cells: 188704
+************************************************
+Time Step Count: 497  Current Time: 0.497  dtN:0.001
+ Remaining Liquid Cells: 188189
+************************************************
+Time Step Count: 498  Current Time: 0.498  dtN:0.001
+ Remaining Liquid Cells: 187629
+************************************************
+Time Step Count: 499  Current Time: 0.499  dtN:0.001
+ Remaining Liquid Cells: 187093
+Fail to create the directory, which may exist already! 
+************************************************
+Time Step Count: 500  Current Time: 0.5  dtN:0.001
+ Remaining Liquid Cells: 186554
+************************************************
+Time Step Count: 501  Current Time: 0.501  dtN:0.001
+ Remaining Liquid Cells: 185996
+************************************************
+Time Step Count: 502  Current Time: 0.502  dtN:0.001
+ Remaining Liquid Cells: 185400
+************************************************
+Time Step Count: 503  Current Time: 0.503  dtN:0.001
+ Remaining Liquid Cells: 184794
+************************************************
+Time Step Count: 504  Current Time: 0.504  dtN:0.001
+ Remaining Liquid Cells: 184188
+************************************************
+Time Step Count: 505  Current Time: 0.505  dtN:0.001
+ Remaining Liquid Cells: 183575
+************************************************
+Time Step Count: 506  Current Time: 0.506  dtN:0.001
+ Remaining Liquid Cells: 182902
+************************************************
+Time Step Count: 507  Current Time: 0.507  dtN:0.001
+ Remaining Liquid Cells: 182310
+************************************************
+Time Step Count: 508  Current Time: 0.508  dtN:0.001
+ Remaining Liquid Cells: 181693
+************************************************
+Time Step Count: 509  Current Time: 0.509  dtN:0.001
+ Remaining Liquid Cells: 181021
+************************************************
+Time Step Count: 510  Current Time: 0.51  dtN:0.001
+ Remaining Liquid Cells: 180429
+************************************************
+Time Step Count: 511  Current Time: 0.511  dtN:0.001
+ Remaining Liquid Cells: 179732
+************************************************
+Time Step Count: 512  Current Time: 0.512  dtN:0.001
+ Remaining Liquid Cells: 179100
+************************************************
+Time Step Count: 513  Current Time: 0.513  dtN:0.001
+ Remaining Liquid Cells: 178468
+************************************************
+Time Step Count: 514  Current Time: 0.514  dtN:0.001
+ Remaining Liquid Cells: 177810
+************************************************
+Time Step Count: 515  Current Time: 0.515  dtN:0.001
+ Remaining Liquid Cells: 177157
+************************************************
+Time Step Count: 516  Current Time: 0.516  dtN:0.001
+ Remaining Liquid Cells: 176557
+************************************************
+Time Step Count: 517  Current Time: 0.517  dtN:0.001
+ Remaining Liquid Cells: 175902
+************************************************
+Time Step Count: 518  Current Time: 0.518  dtN:0.001
+ Remaining Liquid Cells: 175279
+************************************************
+Time Step Count: 519  Current Time: 0.519  dtN:0.001
+ Remaining Liquid Cells: 174615
+************************************************
+Time Step Count: 520  Current Time: 0.52  dtN:0.001
+ Remaining Liquid Cells: 173973
+************************************************
+Time Step Count: 521  Current Time: 0.521  dtN:0.001
+ Remaining Liquid Cells: 173293
+************************************************
+Time Step Count: 522  Current Time: 0.522  dtN:0.001
+ Remaining Liquid Cells: 172548
+************************************************
+Time Step Count: 523  Current Time: 0.523  dtN:0.001
+ Remaining Liquid Cells: 171846
+************************************************
+Time Step Count: 524  Current Time: 0.524  dtN:0.001
+ Remaining Liquid Cells: 171159
+************************************************
+Time Step Count: 525  Current Time: 0.525  dtN:0.001
+ Remaining Liquid Cells: 170447
+************************************************
+Time Step Count: 526  Current Time: 0.526  dtN:0.001
+ Remaining Liquid Cells: 169738
+************************************************
+Time Step Count: 527  Current Time: 0.527  dtN:0.001
+ Remaining Liquid Cells: 168911
+************************************************
+Time Step Count: 528  Current Time: 0.528  dtN:0.001
+ Remaining Liquid Cells: 168247
+************************************************
+Time Step Count: 529  Current Time: 0.529  dtN:0.001
+ Remaining Liquid Cells: 167466
+************************************************
+Time Step Count: 530  Current Time: 0.53  dtN:0.001
+ Remaining Liquid Cells: 166684
+************************************************
+Time Step Count: 531  Current Time: 0.531  dtN:0.001
+ Remaining Liquid Cells: 165831
+************************************************
+Time Step Count: 532  Current Time: 0.532  dtN:0.001
+ Remaining Liquid Cells: 165085
+************************************************
+Time Step Count: 533  Current Time: 0.533  dtN:0.001
+ Remaining Liquid Cells: 164370
+************************************************
+Time Step Count: 534  Current Time: 0.534  dtN:0.001
+ Remaining Liquid Cells: 163621
+************************************************
+Time Step Count: 535  Current Time: 0.535  dtN:0.001
+ Remaining Liquid Cells: 162895
+************************************************
+Time Step Count: 536  Current Time: 0.536  dtN:0.001
+ Remaining Liquid Cells: 162145
+************************************************
+Time Step Count: 537  Current Time: 0.537  dtN:0.001
+ Remaining Liquid Cells: 161400
+************************************************
+Time Step Count: 538  Current Time: 0.538  dtN:0.001
+ Remaining Liquid Cells: 160636
+************************************************
+Time Step Count: 539  Current Time: 0.539  dtN:0.001
+ Remaining Liquid Cells: 159857
+************************************************
+Time Step Count: 540  Current Time: 0.54  dtN:0.001
+ Remaining Liquid Cells: 159023
+************************************************
+Time Step Count: 541  Current Time: 0.541  dtN:0.001
+ Remaining Liquid Cells: 158136
+************************************************
+Time Step Count: 542  Current Time: 0.542  dtN:0.001
+ Remaining Liquid Cells: 157343
+************************************************
+Time Step Count: 543  Current Time: 0.543  dtN:0.001
+ Remaining Liquid Cells: 156529
+************************************************
+Time Step Count: 544  Current Time: 0.544  dtN:0.001
+ Remaining Liquid Cells: 155725
+************************************************
+Time Step Count: 545  Current Time: 0.545  dtN:0.001
+ Remaining Liquid Cells: 154842
+************************************************
+Time Step Count: 546  Current Time: 0.546  dtN:0.001
+ Remaining Liquid Cells: 154050
+************************************************
+Time Step Count: 547  Current Time: 0.547  dtN:0.001
+ Remaining Liquid Cells: 153209
+************************************************
+Time Step Count: 548  Current Time: 0.548  dtN:0.001
+ Remaining Liquid Cells: 152365
+************************************************
+Time Step Count: 549  Current Time: 0.549  dtN:0.001
+ Remaining Liquid Cells: 151493
+************************************************
+Time Step Count: 550  Current Time: 0.55  dtN:0.001
+ Remaining Liquid Cells: 150679
+************************************************
+Time Step Count: 551  Current Time: 0.551  dtN:0.001
+ Remaining Liquid Cells: 149757
+************************************************
+Time Step Count: 552  Current Time: 0.552  dtN:0.001
+ Remaining Liquid Cells: 148957
+************************************************
+Time Step Count: 553  Current Time: 0.553  dtN:0.001
+ Remaining Liquid Cells: 148120
+************************************************
+Time Step Count: 554  Current Time: 0.554  dtN:0.001
+ Remaining Liquid Cells: 147259
+************************************************
+Time Step Count: 555  Current Time: 0.555  dtN:0.001
+ Remaining Liquid Cells: 146402
+************************************************
+Time Step Count: 556  Current Time: 0.556  dtN:0.001
+ Remaining Liquid Cells: 145550
+************************************************
+Time Step Count: 557  Current Time: 0.557  dtN:0.001
+ Remaining Liquid Cells: 144670
+************************************************
+Time Step Count: 558  Current Time: 0.558  dtN:0.001
+ Remaining Liquid Cells: 143773
+************************************************
+Time Step Count: 559  Current Time: 0.559  dtN:0.001
+ Remaining Liquid Cells: 142818
+************************************************
+Time Step Count: 560  Current Time: 0.56  dtN:0.001
+ Remaining Liquid Cells: 141846
+************************************************
+Time Step Count: 561  Current Time: 0.561  dtN:0.001
+ Remaining Liquid Cells: 140880
+************************************************
+Time Step Count: 562  Current Time: 0.562  dtN:0.001
+ Remaining Liquid Cells: 139938
+************************************************
+Time Step Count: 563  Current Time: 0.563  dtN:0.001
+ Remaining Liquid Cells: 138999
+************************************************
+Time Step Count: 564  Current Time: 0.564  dtN:0.001
+ Remaining Liquid Cells: 138064
+************************************************
+Time Step Count: 565  Current Time: 0.565  dtN:0.001
+ Remaining Liquid Cells: 137163
+************************************************
+Time Step Count: 566  Current Time: 0.566  dtN:0.001
+ Remaining Liquid Cells: 136193
+************************************************
+Time Step Count: 567  Current Time: 0.567  dtN:0.001
+ Remaining Liquid Cells: 135194
+************************************************
+Time Step Count: 568  Current Time: 0.568  dtN:0.001
+ Remaining Liquid Cells: 134255
+************************************************
+Time Step Count: 569  Current Time: 0.569  dtN:0.001
+ Remaining Liquid Cells: 133362
+************************************************
+Time Step Count: 570  Current Time: 0.57  dtN:0.001
+ Remaining Liquid Cells: 132444
+************************************************
+Time Step Count: 571  Current Time: 0.571  dtN:0.001
+ Remaining Liquid Cells: 131459
+************************************************
+Time Step Count: 572  Current Time: 0.572  dtN:0.001
+ Remaining Liquid Cells: 130475
+************************************************
+Time Step Count: 573  Current Time: 0.573  dtN:0.001
+ Remaining Liquid Cells: 129496
+************************************************
+Time Step Count: 574  Current Time: 0.574  dtN:0.001
+ Remaining Liquid Cells: 128508
+************************************************
+Time Step Count: 575  Current Time: 0.575  dtN:0.001
+ Remaining Liquid Cells: 127473
+************************************************
+Time Step Count: 576  Current Time: 0.576  dtN:0.001
+ Remaining Liquid Cells: 126453
+************************************************
+Time Step Count: 577  Current Time: 0.577  dtN:0.001
+ Remaining Liquid Cells: 125441
+************************************************
+Time Step Count: 578  Current Time: 0.578  dtN:0.001
+ Remaining Liquid Cells: 124400
+************************************************
+Time Step Count: 579  Current Time: 0.579  dtN:0.001
+ Remaining Liquid Cells: 123393
+************************************************
+Time Step Count: 580  Current Time: 0.58  dtN:0.001
+ Remaining Liquid Cells: 122453
+************************************************
+Time Step Count: 581  Current Time: 0.581  dtN:0.001
+ Remaining Liquid Cells: 121472
+************************************************
+Time Step Count: 582  Current Time: 0.582  dtN:0.001
+ Remaining Liquid Cells: 120557
+************************************************
+Time Step Count: 583  Current Time: 0.583  dtN:0.001
+ Remaining Liquid Cells: 119582
+************************************************
+Time Step Count: 584  Current Time: 0.584  dtN:0.001
+ Remaining Liquid Cells: 118640
+************************************************
+Time Step Count: 585  Current Time: 0.585  dtN:0.001
+ Remaining Liquid Cells: 117649
+************************************************
+Time Step Count: 586  Current Time: 0.586  dtN:0.001
+ Remaining Liquid Cells: 116698
+************************************************
+Time Step Count: 587  Current Time: 0.587  dtN:0.001
+ Remaining Liquid Cells: 115680
+************************************************
+Time Step Count: 588  Current Time: 0.588  dtN:0.001
+ Remaining Liquid Cells: 114629
+************************************************
+Time Step Count: 589  Current Time: 0.589  dtN:0.001
+ Remaining Liquid Cells: 113554
+************************************************
+Time Step Count: 590  Current Time: 0.59  dtN:0.001
+ Remaining Liquid Cells: 112584
+************************************************
+Time Step Count: 591  Current Time: 0.591  dtN:0.001
+ Remaining Liquid Cells: 111559
+************************************************
+Time Step Count: 592  Current Time: 0.592  dtN:0.001
+ Remaining Liquid Cells: 110516
+************************************************
+Time Step Count: 593  Current Time: 0.593  dtN:0.001
+ Remaining Liquid Cells: 109470
+************************************************
+Time Step Count: 594  Current Time: 0.594  dtN:0.001
+ Remaining Liquid Cells: 108476
+************************************************
+Time Step Count: 595  Current Time: 0.595  dtN:0.001
+ Remaining Liquid Cells: 107417
+************************************************
+Time Step Count: 596  Current Time: 0.596  dtN:0.001
+ Remaining Liquid Cells: 106413
+************************************************
+Time Step Count: 597  Current Time: 0.597  dtN:0.001
+ Remaining Liquid Cells: 105328
+************************************************
+Time Step Count: 598  Current Time: 0.598  dtN:0.001
+ Remaining Liquid Cells: 104293
+************************************************
+Time Step Count: 599  Current Time: 0.599  dtN:0.001
+ Remaining Liquid Cells: 103264
+Fail to create the directory, which may exist already! 
+************************************************
+Time Step Count: 600  Current Time: 0.6  dtN:0.001
+ Remaining Liquid Cells: 102212
+************************************************
+Time Step Count: 601  Current Time: 0.601  dtN:0.001
+ Remaining Liquid Cells: 101210
+************************************************
+Time Step Count: 602  Current Time: 0.602  dtN:0.001
+ Remaining Liquid Cells: 100142
+************************************************
+Time Step Count: 603  Current Time: 0.603  dtN:0.001
+ Remaining Liquid Cells: 99098
+************************************************
+Time Step Count: 604  Current Time: 0.604  dtN:0.001
+ Remaining Liquid Cells: 98129
+************************************************
+Time Step Count: 605  Current Time: 0.605  dtN:0.001
+ Remaining Liquid Cells: 97110
+************************************************
+Time Step Count: 606  Current Time: 0.606  dtN:0.001
+ Remaining Liquid Cells: 96075
+************************************************
+Time Step Count: 607  Current Time: 0.607  dtN:0.001
+ Remaining Liquid Cells: 95082
+************************************************
+Time Step Count: 608  Current Time: 0.608  dtN:0.001
+ Remaining Liquid Cells: 94030
+************************************************
+Time Step Count: 609  Current Time: 0.609  dtN:0.001
+ Remaining Liquid Cells: 93009
+************************************************
+Time Step Count: 610  Current Time: 0.61  dtN:0.001
+ Remaining Liquid Cells: 91989
+************************************************
+Time Step Count: 611  Current Time: 0.611  dtN:0.001
+ Remaining Liquid Cells: 90931
+************************************************
+Time Step Count: 612  Current Time: 0.612  dtN:0.001
+ Remaining Liquid Cells: 89944
+************************************************
+Time Step Count: 613  Current Time: 0.613  dtN:0.001
+ Remaining Liquid Cells: 88894
+************************************************
+Time Step Count: 614  Current Time: 0.614  dtN:0.001
+ Remaining Liquid Cells: 87837
+************************************************
+Time Step Count: 615  Current Time: 0.615  dtN:0.001
+ Remaining Liquid Cells: 86873
+************************************************
+Time Step Count: 616  Current Time: 0.616  dtN:0.001
+ Remaining Liquid Cells: 85820
+************************************************
+Time Step Count: 617  Current Time: 0.617  dtN:0.001
+ Remaining Liquid Cells: 84800
+************************************************
+Time Step Count: 618  Current Time: 0.618  dtN:0.001
+ Remaining Liquid Cells: 83766
+************************************************
+Time Step Count: 619  Current Time: 0.619  dtN:0.001
+ Remaining Liquid Cells: 82747
+************************************************
+Time Step Count: 620  Current Time: 0.62  dtN:0.001
+ Remaining Liquid Cells: 81724
+************************************************
+Time Step Count: 621  Current Time: 0.621  dtN:0.001
+ Remaining Liquid Cells: 80618
+************************************************
+Time Step Count: 622  Current Time: 0.622  dtN:0.001
+ Remaining Liquid Cells: 79561
+************************************************
+Time Step Count: 623  Current Time: 0.623  dtN:0.001
+ Remaining Liquid Cells: 78598
+************************************************
+Time Step Count: 624  Current Time: 0.624  dtN:0.001
+ Remaining Liquid Cells: 77582
+************************************************
+Time Step Count: 625  Current Time: 0.625  dtN:0.001
+ Remaining Liquid Cells: 76670
+************************************************
+Time Step Count: 626  Current Time: 0.626  dtN:0.001
+ Remaining Liquid Cells: 75666
+************************************************
+Time Step Count: 627  Current Time: 0.627  dtN:0.001
+ Remaining Liquid Cells: 74676
+************************************************
+Time Step Count: 628  Current Time: 0.628  dtN:0.001
+ Remaining Liquid Cells: 73674
+************************************************
+Time Step Count: 629  Current Time: 0.629  dtN:0.001
+ Remaining Liquid Cells: 72649
+************************************************
+Time Step Count: 630  Current Time: 0.63  dtN:0.001
+ Remaining Liquid Cells: 71690
+************************************************
+Time Step Count: 631  Current Time: 0.631  dtN:0.001
+ Remaining Liquid Cells: 70659
+************************************************
+Time Step Count: 632  Current Time: 0.632  dtN:0.001
+ Remaining Liquid Cells: 69660
+************************************************
+Time Step Count: 633  Current Time: 0.633  dtN:0.001
+ Remaining Liquid Cells: 68674
+************************************************
+Time Step Count: 634  Current Time: 0.634  dtN:0.001
+ Remaining Liquid Cells: 67692
+************************************************
+Time Step Count: 635  Current Time: 0.635  dtN:0.001
+ Remaining Liquid Cells: 66712
+************************************************
+Time Step Count: 636  Current Time: 0.636  dtN:0.001
+ Remaining Liquid Cells: 65738
+************************************************
+Time Step Count: 637  Current Time: 0.637  dtN:0.001
+ Remaining Liquid Cells: 64786
+************************************************
+Time Step Count: 638  Current Time: 0.638  dtN:0.001
+ Remaining Liquid Cells: 63854
+************************************************
+Time Step Count: 639  Current Time: 0.639  dtN:0.001
+ Remaining Liquid Cells: 62912
+************************************************
+Time Step Count: 640  Current Time: 0.64  dtN:0.001
+ Remaining Liquid Cells: 62010
+************************************************
+Time Step Count: 641  Current Time: 0.641  dtN:0.001
+ Remaining Liquid Cells: 61089
+************************************************
+Time Step Count: 642  Current Time: 0.642  dtN:0.001
+ Remaining Liquid Cells: 60192
+************************************************
+Time Step Count: 643  Current Time: 0.643  dtN:0.001
+ Remaining Liquid Cells: 59304
+************************************************
+Time Step Count: 644  Current Time: 0.644  dtN:0.001
+ Remaining Liquid Cells: 58386
+************************************************
+Time Step Count: 645  Current Time: 0.645  dtN:0.001
+ Remaining Liquid Cells: 57459
+************************************************
+Time Step Count: 646  Current Time: 0.646  dtN:0.001
+ Remaining Liquid Cells: 56585
+************************************************
+Time Step Count: 647  Current Time: 0.647  dtN:0.001
+ Remaining Liquid Cells: 55691
+************************************************
+Time Step Count: 648  Current Time: 0.648  dtN:0.001
+ Remaining Liquid Cells: 54819
+************************************************
+Time Step Count: 649  Current Time: 0.649  dtN:0.001
+ Remaining Liquid Cells: 53940
+************************************************
+Time Step Count: 650  Current Time: 0.65  dtN:0.001
+ Remaining Liquid Cells: 53041
+************************************************
+Time Step Count: 651  Current Time: 0.651  dtN:0.001
+ Remaining Liquid Cells: 52130
+************************************************
+Time Step Count: 652  Current Time: 0.652  dtN:0.001
+ Remaining Liquid Cells: 51281
+************************************************
+Time Step Count: 653  Current Time: 0.653  dtN:0.001
+ Remaining Liquid Cells: 50446
+************************************************
+Time Step Count: 654  Current Time: 0.654  dtN:0.001
+ Remaining Liquid Cells: 49613
+************************************************
+Time Step Count: 655  Current Time: 0.655  dtN:0.001
+ Remaining Liquid Cells: 48825
+************************************************
+Time Step Count: 656  Current Time: 0.656  dtN:0.001
+ Remaining Liquid Cells: 47948
+************************************************
+Time Step Count: 657  Current Time: 0.657  dtN:0.001
+ Remaining Liquid Cells: 47096
+************************************************
+Time Step Count: 658  Current Time: 0.658  dtN:0.001
+ Remaining Liquid Cells: 46242
+************************************************
+Time Step Count: 659  Current Time: 0.659  dtN:0.001
+ Remaining Liquid Cells: 45509
+************************************************
+Time Step Count: 660  Current Time: 0.66  dtN:0.001
+ Remaining Liquid Cells: 44728
+************************************************
+Time Step Count: 661  Current Time: 0.661  dtN:0.001
+ Remaining Liquid Cells: 43977
+************************************************
+Time Step Count: 662  Current Time: 0.662  dtN:0.001
+ Remaining Liquid Cells: 43175
+************************************************
+Time Step Count: 663  Current Time: 0.663  dtN:0.001
+ Remaining Liquid Cells: 42423
+************************************************
+Time Step Count: 664  Current Time: 0.664  dtN:0.001
+ Remaining Liquid Cells: 41647
+************************************************
+Time Step Count: 665  Current Time: 0.665  dtN:0.001
+ Remaining Liquid Cells: 40899
+************************************************
+Time Step Count: 666  Current Time: 0.666  dtN:0.001
+ Remaining Liquid Cells: 40114
+************************************************
+Time Step Count: 667  Current Time: 0.667  dtN:0.001
+ Remaining Liquid Cells: 39357
+************************************************
+Time Step Count: 668  Current Time: 0.668  dtN:0.001
+ Remaining Liquid Cells: 38567
+************************************************
+Time Step Count: 669  Current Time: 0.669  dtN:0.001
+ Remaining Liquid Cells: 37794
+************************************************
+Time Step Count: 670  Current Time: 0.67  dtN:0.001
+ Remaining Liquid Cells: 37038
+************************************************
+Time Step Count: 671  Current Time: 0.671  dtN:0.001
+ Remaining Liquid Cells: 36356
+************************************************
+Time Step Count: 672  Current Time: 0.672  dtN:0.001
+ Remaining Liquid Cells: 35665
+************************************************
+Time Step Count: 673  Current Time: 0.673  dtN:0.001
+ Remaining Liquid Cells: 34966
+************************************************
+Time Step Count: 674  Current Time: 0.674  dtN:0.001
+ Remaining Liquid Cells: 34311
+************************************************
+Time Step Count: 675  Current Time: 0.675  dtN:0.001
+ Remaining Liquid Cells: 33680
+************************************************
+Time Step Count: 676  Current Time: 0.676  dtN:0.001
+ Remaining Liquid Cells: 32975
+************************************************
+Time Step Count: 677  Current Time: 0.677  dtN:0.001
+ Remaining Liquid Cells: 32336
+************************************************
+Time Step Count: 678  Current Time: 0.678  dtN:0.001
+ Remaining Liquid Cells: 31728
+************************************************
+Time Step Count: 679  Current Time: 0.679  dtN:0.001
+ Remaining Liquid Cells: 31113
+************************************************
+Time Step Count: 680  Current Time: 0.68  dtN:0.001
+ Remaining Liquid Cells: 30476
+************************************************
+Time Step Count: 681  Current Time: 0.681  dtN:0.001
+ Remaining Liquid Cells: 29853
+************************************************
+Time Step Count: 682  Current Time: 0.682  dtN:0.001
+ Remaining Liquid Cells: 29239
+************************************************
+Time Step Count: 683  Current Time: 0.683  dtN:0.001
+ Remaining Liquid Cells: 28619
+************************************************
+Time Step Count: 684  Current Time: 0.684  dtN:0.001
+ Remaining Liquid Cells: 27989
+************************************************
+Time Step Count: 685  Current Time: 0.685  dtN:0.001
+ Remaining Liquid Cells: 27436
+************************************************
+Time Step Count: 686  Current Time: 0.686  dtN:0.001
+ Remaining Liquid Cells: 26831
+************************************************
+Time Step Count: 687  Current Time: 0.687  dtN:0.001
+ Remaining Liquid Cells: 26277
+************************************************
+Time Step Count: 688  Current Time: 0.688  dtN:0.001
+ Remaining Liquid Cells: 25735
+************************************************
+Time Step Count: 689  Current Time: 0.689  dtN:0.001
+ Remaining Liquid Cells: 25174
+************************************************
+Time Step Count: 690  Current Time: 0.69  dtN:0.001
+ Remaining Liquid Cells: 24640
+************************************************
+Time Step Count: 691  Current Time: 0.691  dtN:0.001
+ Remaining Liquid Cells: 24130
+************************************************
+Time Step Count: 692  Current Time: 0.692  dtN:0.001
+ Remaining Liquid Cells: 23616
+************************************************
+Time Step Count: 693  Current Time: 0.693  dtN:0.001
+ Remaining Liquid Cells: 23124
+************************************************
+Time Step Count: 694  Current Time: 0.694  dtN:0.001
+ Remaining Liquid Cells: 22610
+************************************************
+Time Step Count: 695  Current Time: 0.695  dtN:0.001
+ Remaining Liquid Cells: 22129
+************************************************
+Time Step Count: 696  Current Time: 0.696  dtN:0.001
+ Remaining Liquid Cells: 21631
+************************************************
+Time Step Count: 697  Current Time: 0.697  dtN:0.001
+ Remaining Liquid Cells: 21146
+************************************************
+Time Step Count: 698  Current Time: 0.698  dtN:0.001
+ Remaining Liquid Cells: 20677
+************************************************
+Time Step Count: 699  Current Time: 0.699  dtN:0.001
+ Remaining Liquid Cells: 20194
+Fail to create the directory, which may exist already! 
+************************************************
+Time Step Count: 700  Current Time: 0.7  dtN:0.001
+ Remaining Liquid Cells: 19701
+************************************************
+Time Step Count: 701  Current Time: 0.701  dtN:0.001
+ Remaining Liquid Cells: 19190
+************************************************
+Time Step Count: 702  Current Time: 0.702  dtN:0.001
+ Remaining Liquid Cells: 18746
+************************************************
+Time Step Count: 703  Current Time: 0.703  dtN:0.001
+ Remaining Liquid Cells: 18271
+************************************************
+Time Step Count: 704  Current Time: 0.704  dtN:0.001
+ Remaining Liquid Cells: 17815
+************************************************
+Time Step Count: 705  Current Time: 0.705  dtN:0.001
+ Remaining Liquid Cells: 17410
+************************************************
+Time Step Count: 706  Current Time: 0.706  dtN:0.001
+ Remaining Liquid Cells: 16966
+************************************************
+Time Step Count: 707  Current Time: 0.707  dtN:0.001
+ Remaining Liquid Cells: 16552
+************************************************
+Time Step Count: 708  Current Time: 0.708  dtN:0.001
+ Remaining Liquid Cells: 16136
+************************************************
+Time Step Count: 709  Current Time: 0.709  dtN:0.001
+ Remaining Liquid Cells: 15753
+************************************************
+Time Step Count: 710  Current Time: 0.71  dtN:0.001
+ Remaining Liquid Cells: 15384
+************************************************
+Time Step Count: 711  Current Time: 0.711  dtN:0.001
+ Remaining Liquid Cells: 14974
+************************************************
+Time Step Count: 712  Current Time: 0.712  dtN:0.001
+ Remaining Liquid Cells: 14599
+************************************************
+Time Step Count: 713  Current Time: 0.713  dtN:0.001
+ Remaining Liquid Cells: 14259
+************************************************
+Time Step Count: 714  Current Time: 0.714  dtN:0.001
+ Remaining Liquid Cells: 13923
+************************************************
+Time Step Count: 715  Current Time: 0.715  dtN:0.001
+ Remaining Liquid Cells: 13584
+************************************************
+Time Step Count: 716  Current Time: 0.716  dtN:0.001
+ Remaining Liquid Cells: 13239
+************************************************
+Time Step Count: 717  Current Time: 0.717  dtN:0.001
+ Remaining Liquid Cells: 12919
+************************************************
+Time Step Count: 718  Current Time: 0.718  dtN:0.001
+ Remaining Liquid Cells: 12564
+************************************************
+Time Step Count: 719  Current Time: 0.719  dtN:0.001
+ Remaining Liquid Cells: 12235
+************************************************
+Time Step Count: 720  Current Time: 0.72  dtN:0.001
+ Remaining Liquid Cells: 11934
+************************************************
+Time Step Count: 721  Current Time: 0.721  dtN:0.001
+ Remaining Liquid Cells: 11639
+************************************************
+Time Step Count: 722  Current Time: 0.722  dtN:0.001
+ Remaining Liquid Cells: 11353
+************************************************
+Time Step Count: 723  Current Time: 0.723  dtN:0.001
+ Remaining Liquid Cells: 11044
+************************************************
+Time Step Count: 724  Current Time: 0.724  dtN:0.001
+ Remaining Liquid Cells: 10770
+************************************************
+Time Step Count: 725  Current Time: 0.725  dtN:0.001
+ Remaining Liquid Cells: 10511
+************************************************
+Time Step Count: 726  Current Time: 0.726  dtN:0.001
+ Remaining Liquid Cells: 10230
+************************************************
+Time Step Count: 727  Current Time: 0.727  dtN:0.001
+ Remaining Liquid Cells: 9948
+************************************************
+Time Step Count: 728  Current Time: 0.728  dtN:0.001
+ Remaining Liquid Cells: 9676
+************************************************
+Time Step Count: 729  Current Time: 0.729  dtN:0.001
+ Remaining Liquid Cells: 9410
+************************************************
+Time Step Count: 730  Current Time: 0.73  dtN:0.001
+ Remaining Liquid Cells: 9171
+************************************************
+Time Step Count: 731  Current Time: 0.731  dtN:0.001
+ Remaining Liquid Cells: 8944
+************************************************
+Time Step Count: 732  Current Time: 0.732  dtN:0.001
+ Remaining Liquid Cells: 8701
+************************************************
+Time Step Count: 733  Current Time: 0.733  dtN:0.001
+ Remaining Liquid Cells: 8459
+************************************************
+Time Step Count: 734  Current Time: 0.734  dtN:0.001
+ Remaining Liquid Cells: 8227
+************************************************
+Time Step Count: 735  Current Time: 0.735  dtN:0.001
+ Remaining Liquid Cells: 8019
+************************************************
+Time Step Count: 736  Current Time: 0.736  dtN:0.001
+ Remaining Liquid Cells: 7781
+************************************************
+Time Step Count: 737  Current Time: 0.737  dtN:0.001
+ Remaining Liquid Cells: 7578
+************************************************
+Time Step Count: 738  Current Time: 0.738  dtN:0.001
+ Remaining Liquid Cells: 7351
+************************************************
+Time Step Count: 739  Current Time: 0.739  dtN:0.001
+ Remaining Liquid Cells: 7159
+************************************************
+Time Step Count: 740  Current Time: 0.74  dtN:0.001
+ Remaining Liquid Cells: 6952
+************************************************
+Time Step Count: 741  Current Time: 0.741  dtN:0.001
+ Remaining Liquid Cells: 6754
+************************************************
+Time Step Count: 742  Current Time: 0.742  dtN:0.001
+ Remaining Liquid Cells: 6591
+************************************************
+Time Step Count: 743  Current Time: 0.743  dtN:0.001
+ Remaining Liquid Cells: 6421
+************************************************
+Time Step Count: 744  Current Time: 0.744  dtN:0.001
+ Remaining Liquid Cells: 6218
+************************************************
+Time Step Count: 745  Current Time: 0.745  dtN:0.001
+ Remaining Liquid Cells: 6060
+************************************************
+Time Step Count: 746  Current Time: 0.746  dtN:0.001
+ Remaining Liquid Cells: 5897
+************************************************
+Time Step Count: 747  Current Time: 0.747  dtN:0.001
+ Remaining Liquid Cells: 5741
+************************************************
+Time Step Count: 748  Current Time: 0.748  dtN:0.001
+ Remaining Liquid Cells: 5558
+************************************************
+Time Step Count: 749  Current Time: 0.749  dtN:0.001
+ Remaining Liquid Cells: 5419
+************************************************
+Time Step Count: 750  Current Time: 0.75  dtN:0.001
+ Remaining Liquid Cells: 5272
+************************************************
+Time Step Count: 751  Current Time: 0.751  dtN:0.001
+ Remaining Liquid Cells: 5133
+************************************************
+Time Step Count: 752  Current Time: 0.752  dtN:0.001
+ Remaining Liquid Cells: 5003
+************************************************
+Time Step Count: 753  Current Time: 0.753  dtN:0.001
+ Remaining Liquid Cells: 4845
+************************************************
+Time Step Count: 754  Current Time: 0.754  dtN:0.001
+ Remaining Liquid Cells: 4717
+************************************************
+Time Step Count: 755  Current Time: 0.755  dtN:0.001
+ Remaining Liquid Cells: 4582
+************************************************
+Time Step Count: 756  Current Time: 0.756  dtN:0.001
+ Remaining Liquid Cells: 4452
+************************************************
+Time Step Count: 757  Current Time: 0.757  dtN:0.001
+ Remaining Liquid Cells: 4317
+************************************************
+Time Step Count: 758  Current Time: 0.758  dtN:0.001
+ Remaining Liquid Cells: 4197
+************************************************
+Time Step Count: 759  Current Time: 0.759  dtN:0.001
+ Remaining Liquid Cells: 4065
+************************************************
+Time Step Count: 760  Current Time: 0.76  dtN:0.001
+ Remaining Liquid Cells: 3948
+************************************************
+Time Step Count: 761  Current Time: 0.761  dtN:0.001
+ Remaining Liquid Cells: 3836
+************************************************
+Time Step Count: 762  Current Time: 0.762  dtN:0.001
+ Remaining Liquid Cells: 3738
+************************************************
+Time Step Count: 763  Current Time: 0.763  dtN:0.001
+ Remaining Liquid Cells: 3615
+************************************************
+Time Step Count: 764  Current Time: 0.764  dtN:0.001
+ Remaining Liquid Cells: 3499
+************************************************
+Time Step Count: 765  Current Time: 0.765  dtN:0.001
+ Remaining Liquid Cells: 3406
+************************************************
+Time Step Count: 766  Current Time: 0.766  dtN:0.001
+ Remaining Liquid Cells: 3306
+************************************************
+Time Step Count: 767  Current Time: 0.767  dtN:0.001
+ Remaining Liquid Cells: 3205
+************************************************
+Time Step Count: 768  Current Time: 0.768  dtN:0.001
+ Remaining Liquid Cells: 3113
+************************************************
+Time Step Count: 769  Current Time: 0.769  dtN:0.001
+ Remaining Liquid Cells: 3009
+************************************************
+Time Step Count: 770  Current Time: 0.77  dtN:0.001
+ Remaining Liquid Cells: 2927
+************************************************
+Time Step Count: 771  Current Time: 0.771  dtN:0.001
+ Remaining Liquid Cells: 2851
+************************************************
+Time Step Count: 772  Current Time: 0.772  dtN:0.001
+ Remaining Liquid Cells: 2762
+************************************************
+Time Step Count: 773  Current Time: 0.773  dtN:0.001
+ Remaining Liquid Cells: 2670
+************************************************
+Time Step Count: 774  Current Time: 0.774  dtN:0.001
+ Remaining Liquid Cells: 2593
+************************************************
+Time Step Count: 775  Current Time: 0.775  dtN:0.001
+ Remaining Liquid Cells: 2515
+************************************************
+Time Step Count: 776  Current Time: 0.776  dtN:0.001
+ Remaining Liquid Cells: 2432
+************************************************
+Time Step Count: 777  Current Time: 0.777  dtN:0.001
+ Remaining Liquid Cells: 2351
+************************************************
+Time Step Count: 778  Current Time: 0.778  dtN:0.001
+ Remaining Liquid Cells: 2267
+************************************************
+Time Step Count: 779  Current Time: 0.779  dtN:0.001
+ Remaining Liquid Cells: 2189
+************************************************
+Time Step Count: 780  Current Time: 0.78  dtN:0.001
+ Remaining Liquid Cells: 2124
+************************************************
+Time Step Count: 781  Current Time: 0.781  dtN:0.001
+ Remaining Liquid Cells: 2048
+************************************************
+Time Step Count: 782  Current Time: 0.782  dtN:0.001
+ Remaining Liquid Cells: 1972
+************************************************
+Time Step Count: 783  Current Time: 0.783  dtN:0.001
+ Remaining Liquid Cells: 1900
+************************************************
+Time Step Count: 784  Current Time: 0.784  dtN:0.001
+ Remaining Liquid Cells: 1848
+************************************************
+Time Step Count: 785  Current Time: 0.785  dtN:0.001
+ Remaining Liquid Cells: 1790
+************************************************
+Time Step Count: 786  Current Time: 0.786  dtN:0.001
+ Remaining Liquid Cells: 1737
+************************************************
+Time Step Count: 787  Current Time: 0.787  dtN:0.001
+ Remaining Liquid Cells: 1673
+************************************************
+Time Step Count: 788  Current Time: 0.788  dtN:0.001
+ Remaining Liquid Cells: 1610
+************************************************
+Time Step Count: 789  Current Time: 0.789  dtN:0.001
+ Remaining Liquid Cells: 1549
+************************************************
+Time Step Count: 790  Current Time: 0.79  dtN:0.001
+ Remaining Liquid Cells: 1496
+************************************************
+Time Step Count: 791  Current Time: 0.791  dtN:0.001
+ Remaining Liquid Cells: 1449
+************************************************
+Time Step Count: 792  Current Time: 0.792  dtN:0.001
+ Remaining Liquid Cells: 1391
+************************************************
+Time Step Count: 793  Current Time: 0.793  dtN:0.001
+ Remaining Liquid Cells: 1343
+************************************************
+Time Step Count: 794  Current Time: 0.794  dtN:0.001
+ Remaining Liquid Cells: 1299
+************************************************
+Time Step Count: 795  Current Time: 0.795  dtN:0.001
+ Remaining Liquid Cells: 1248
+************************************************
+Time Step Count: 796  Current Time: 0.796  dtN:0.001
+ Remaining Liquid Cells: 1207
+************************************************
+Time Step Count: 797  Current Time: 0.797  dtN:0.001
+ Remaining Liquid Cells: 1164
+************************************************
+Time Step Count: 798  Current Time: 0.798  dtN:0.001
+ Remaining Liquid Cells: 1121
+************************************************
+Time Step Count: 799  Current Time: 0.799  dtN:0.001
+ Remaining Liquid Cells: 1068
+Fail to create the directory, which may exist already! 
+************************************************
+Time Step Count: 800  Current Time: 0.8  dtN:0.001
+ Remaining Liquid Cells: 1015
+************************************************
+Time Step Count: 801  Current Time: 0.801  dtN:0.001
+ Remaining Liquid Cells: 970
+************************************************
+Time Step Count: 802  Current Time: 0.802  dtN:0.001
+ Remaining Liquid Cells: 934
+************************************************
+Time Step Count: 803  Current Time: 0.803  dtN:0.001
+ Remaining Liquid Cells: 899
+************************************************
+Time Step Count: 804  Current Time: 0.804  dtN:0.001
+ Remaining Liquid Cells: 867
+************************************************
+Time Step Count: 805  Current Time: 0.805  dtN:0.001
+ Remaining Liquid Cells: 825
+************************************************
+Time Step Count: 806  Current Time: 0.806  dtN:0.001
+ Remaining Liquid Cells: 792
+************************************************
+Time Step Count: 807  Current Time: 0.807  dtN:0.001
+ Remaining Liquid Cells: 766
+************************************************
+Time Step Count: 808  Current Time: 0.808  dtN:0.001
+ Remaining Liquid Cells: 740
+************************************************
+Time Step Count: 809  Current Time: 0.809  dtN:0.001
+ Remaining Liquid Cells: 707
+************************************************
+Time Step Count: 810  Current Time: 0.81  dtN:0.001
+ Remaining Liquid Cells: 672
+************************************************
+Time Step Count: 811  Current Time: 0.811  dtN:0.001
+ Remaining Liquid Cells: 639
+************************************************
+Time Step Count: 812  Current Time: 0.812  dtN:0.001
+ Remaining Liquid Cells: 612
+************************************************
+Time Step Count: 813  Current Time: 0.813  dtN:0.001
+ Remaining Liquid Cells: 589
+************************************************
+Time Step Count: 814  Current Time: 0.814  dtN:0.001
+ Remaining Liquid Cells: 553
+************************************************
+Time Step Count: 815  Current Time: 0.815  dtN:0.001
+ Remaining Liquid Cells: 529
+************************************************
+Time Step Count: 816  Current Time: 0.816  dtN:0.001
+ Remaining Liquid Cells: 504
+************************************************
+Time Step Count: 817  Current Time: 0.817  dtN:0.001
+ Remaining Liquid Cells: 478
+************************************************
+Time Step Count: 818  Current Time: 0.818  dtN:0.001
+ Remaining Liquid Cells: 458
+************************************************
+Time Step Count: 819  Current Time: 0.819  dtN:0.001
+ Remaining Liquid Cells: 434
+************************************************
+Time Step Count: 820  Current Time: 0.82  dtN:0.001
+ Remaining Liquid Cells: 418
+************************************************
+Time Step Count: 821  Current Time: 0.821  dtN:0.001
+ Remaining Liquid Cells: 406
+************************************************
+Time Step Count: 822  Current Time: 0.822  dtN:0.001
+ Remaining Liquid Cells: 387
+************************************************
+Time Step Count: 823  Current Time: 0.823  dtN:0.001
+ Remaining Liquid Cells: 373
+************************************************
+Time Step Count: 824  Current Time: 0.824  dtN:0.001
+ Remaining Liquid Cells: 351
+************************************************
+Time Step Count: 825  Current Time: 0.825  dtN:0.001
+ Remaining Liquid Cells: 332
+************************************************
+Time Step Count: 826  Current Time: 0.826  dtN:0.001
+ Remaining Liquid Cells: 315
+************************************************
+Time Step Count: 827  Current Time: 0.827  dtN:0.001
+ Remaining Liquid Cells: 304
+************************************************
+Time Step Count: 828  Current Time: 0.828  dtN:0.001
+ Remaining Liquid Cells: 290
+************************************************
+Time Step Count: 829  Current Time: 0.829  dtN:0.001
+ Remaining Liquid Cells: 272
+************************************************
+Time Step Count: 830  Current Time: 0.83  dtN:0.001
+ Remaining Liquid Cells: 261
+************************************************
+Time Step Count: 831  Current Time: 0.831  dtN:0.001
+ Remaining Liquid Cells: 253
+************************************************
+Time Step Count: 832  Current Time: 0.832  dtN:0.001
+ Remaining Liquid Cells: 237
+************************************************
+Time Step Count: 833  Current Time: 0.833  dtN:0.001
+ Remaining Liquid Cells: 223
+************************************************
+Time Step Count: 834  Current Time: 0.834  dtN:0.001
+ Remaining Liquid Cells: 212
+************************************************
+Time Step Count: 835  Current Time: 0.835  dtN:0.001
+ Remaining Liquid Cells: 202
+************************************************
+Time Step Count: 836  Current Time: 0.836  dtN:0.001
+ Remaining Liquid Cells: 194
+************************************************
+Time Step Count: 837  Current Time: 0.837  dtN:0.001
+ Remaining Liquid Cells: 180
+************************************************
+Time Step Count: 838  Current Time: 0.838  dtN:0.001
+ Remaining Liquid Cells: 170
+************************************************
+Time Step Count: 839  Current Time: 0.839  dtN:0.001
+ Remaining Liquid Cells: 160
+************************************************
+Time Step Count: 840  Current Time: 0.84  dtN:0.001
+ Remaining Liquid Cells: 145
+************************************************
+Time Step Count: 841  Current Time: 0.841  dtN:0.001
+ Remaining Liquid Cells: 129
+************************************************
+Time Step Count: 842  Current Time: 0.842  dtN:0.001
+ Remaining Liquid Cells: 123
+************************************************
+Time Step Count: 843  Current Time: 0.843  dtN:0.001
+ Remaining Liquid Cells: 116
+************************************************
+Time Step Count: 844  Current Time: 0.844  dtN:0.001
+ Remaining Liquid Cells: 110
+************************************************
+Time Step Count: 845  Current Time: 0.845  dtN:0.001
+ Remaining Liquid Cells: 100
+************************************************
+Time Step Count: 846  Current Time: 0.846  dtN:0.001
+ Remaining Liquid Cells: 92
+************************************************
+Time Step Count: 847  Current Time: 0.847  dtN:0.001
+ Remaining Liquid Cells: 86
+************************************************
+Time Step Count: 848  Current Time: 0.848  dtN:0.001
+ Remaining Liquid Cells: 80
+************************************************
+Time Step Count: 849  Current Time: 0.849  dtN:0.001
+ Remaining Liquid Cells: 73
+************************************************
+Time Step Count: 850  Current Time: 0.85  dtN:0.001
+ Remaining Liquid Cells: 69
+************************************************
+Time Step Count: 851  Current Time: 0.851  dtN:0.001
+ Remaining Liquid Cells: 61
+************************************************
+Time Step Count: 852  Current Time: 0.852  dtN:0.001
+ Remaining Liquid Cells: 56
+************************************************
+Time Step Count: 853  Current Time: 0.853  dtN:0.001
+ Remaining Liquid Cells: 52
+************************************************
+Time Step Count: 854  Current Time: 0.854  dtN:0.001
+ Remaining Liquid Cells: 47
+************************************************
+Time Step Count: 855  Current Time: 0.855  dtN:0.001
+ Remaining Liquid Cells: 44
+************************************************
+Time Step Count: 856  Current Time: 0.856  dtN:0.001
+ Remaining Liquid Cells: 39
+************************************************
+Time Step Count: 857  Current Time: 0.857  dtN:0.001
+ Remaining Liquid Cells: 38
+************************************************
+Time Step Count: 858  Current Time: 0.858  dtN:0.001
+ Remaining Liquid Cells: 33
+************************************************
+Time Step Count: 859  Current Time: 0.859  dtN:0.001
+ Remaining Liquid Cells: 30
+************************************************
+Time Step Count: 860  Current Time: 0.86  dtN:0.001
+ Remaining Liquid Cells: 28
+************************************************
+Time Step Count: 861  Current Time: 0.861  dtN:0.001
+ Remaining Liquid Cells: 24
+************************************************
+Time Step Count: 862  Current Time: 0.862  dtN:0.001
+ Remaining Liquid Cells: 24
+************************************************
+Time Step Count: 863  Current Time: 0.863  dtN:0.001
+ Remaining Liquid Cells: 23
+************************************************
+Time Step Count: 864  Current Time: 0.864  dtN:0.001
+ Remaining Liquid Cells: 19
+************************************************
+Time Step Count: 865  Current Time: 0.865  dtN:0.001
+ Remaining Liquid Cells: 15
+************************************************
+Time Step Count: 866  Current Time: 0.866  dtN:0.001
+ Remaining Liquid Cells: 14
+************************************************
+Time Step Count: 867  Current Time: 0.867  dtN:0.001
+ Remaining Liquid Cells: 13
+************************************************
+Time Step Count: 868  Current Time: 0.868  dtN:0.001
+ Remaining Liquid Cells: 10
+************************************************
+Time Step Count: 869  Current Time: 0.869  dtN:0.001
+ Remaining Liquid Cells: 10
+************************************************
+Time Step Count: 870  Current Time: 0.87  dtN:0.001
+ Remaining Liquid Cells: 10
+************************************************
+Time Step Count: 871  Current Time: 0.871  dtN:0.001
+ Remaining Liquid Cells: 10
+************************************************
+Time Step Count: 872  Current Time: 0.872  dtN:0.001
+ Remaining Liquid Cells: 10
+************************************************
+Time Step Count: 873  Current Time: 0.873  dtN:0.001
+ Remaining Liquid Cells: 8
+************************************************
+Time Step Count: 874  Current Time: 0.874  dtN:0.001
+ Remaining Liquid Cells: 7
+************************************************
+Time Step Count: 875  Current Time: 0.875  dtN:0.001
+ Remaining Liquid Cells: 6
+************************************************
+Time Step Count: 876  Current Time: 0.876  dtN:0.001
+ Remaining Liquid Cells: 5
+************************************************
+Time Step Count: 877  Current Time: 0.877  dtN:0.001
+ Remaining Liquid Cells: 4
+************************************************
+Time Step Count: 878  Current Time: 0.878  dtN:0.001
+ Remaining Liquid Cells: 4
+************************************************
+Time Step Count: 879  Current Time: 0.879  dtN:0.001
+ Remaining Liquid Cells: 2
+************************************************
+Time Step Count: 880  Current Time: 0.88  dtN:0.001
+ Remaining Liquid Cells: 2
+************************************************
+Time Step Count: 881  Current Time: 0.881  dtN:0.001
+ Remaining Liquid Cells: 2
+************************************************
+Time Step Count: 882  Current Time: 0.882  dtN:0.001
+ Remaining Liquid Cells: 2
+************************************************
+Time Step Count: 883  Current Time: 0.883  dtN:0.001
+ Remaining Liquid Cells: 2
+************************************************
+Time Step Count: 884  Current Time: 0.884  dtN:0.001
+ Remaining Liquid Cells: 1
+************************************************
+Time Step Count: 885  Current Time: 0.885  dtN:0.001
+ Remaining Liquid Cells: 1
+************************************************
+Time Step Count: 886  Current Time: 0.886  dtN:0.001
+ Remaining Liquid Cells: 1
+************************************************
+Time Step Count: 887  Current Time: 0.887  dtN:0.001
+ Remaining Liquid Cells: 1
+************************************************
+Time Step Count: 888  Current Time: 0.888  dtN:0.001
+ Remaining Liquid Cells: 1
+************************************************
+Time Step Count: 889  Current Time: 0.889  dtN:0.001
+ Remaining Liquid Cells: 1
+************************************************
+Time Step Count: 890  Current Time: 0.89  dtN:0.001
+ Remaining Liquid Cells: 1
+************************************************
+Time Step Count: 891  Current Time: 0.891  dtN:0.001
+ Remaining Liquid Cells: 1
+************************************************
+Time Step Count: 892  Current Time: 0.892  dtN:0.001
+ Remaining Liquid Cells: 0
+=====================================
+ Final Number of Grains:
+             272
+=====================================
+**************************************************************
+Simulation Shall Complete                      
+**************************************************************
+-----------------------
+Number of Processors:  4
+
+Total Time for Entire Modeling:
+                               13.0623
+--------------------------------------------------------------
+
+Fail to create the directory, which may exist already! 
+
+**************************************************************
+VTKfileHeader
+**************************************************************
+grain_id,32
+numCell,21634
+meltflag,43236
+EulerAngle,64837

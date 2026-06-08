@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<VTKFile type="PRectilinearGrid" version="0.1" byte_order="LittleEndian">
+  <PRectilinearGrid  WholeExtent="0 60 0 60 0 60" 
+                  GhostLevel = "0">
+    <PCellData Scalars="grain_id">
+      <PDataArray type="Int64" Name="grain_id" format="ascii"/>
+    </PCellData>
+    <PCoordinates>
+      <PDataArray type="Float64" format="ascii"/>
+      <PDataArray type="Float64" format="ascii"/>
+      <PDataArray type="Float64" format="ascii"/>
+    </PCoordinates>
+    <Piece Extent="0 60 0 15 0 60"
+          Source="Grains00000.vtr" />
+    <Piece Extent="0 60 15 30 0 60"
+          Source="Grains00001.vtr" />
+    <Piece Extent="0 60 30 45 0 60"
+          Source="Grains00002.vtr" />
+    <Piece Extent="0 60 45 60 0 60"
+          Source="Grains00003.vtr" />
+  </PRectilinearGrid>
+</VTKFile>

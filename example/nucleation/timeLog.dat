@@ -1,0 +1,27 @@
+---------------------------------------
+Begin Timer Overview (unit s)
+-----------------------
+Number of Processors:  4
+
+Total Time for Entire Modeling:
+                               13.0623
+
+-------------
+CA Modeling:
+Timing for Simulation: Maximum          Minimum 0
+                    8.0907      7.68013
+
+Timing for Nucleatoin: Maximum          Minimum 0
+                    0.36058      0.02662
+
+Timing for Capturing:  Maximum          Minimum 0
+                    5.85733      5.04448
+
+Timing for Cross Capturing: Maximum       Minimum 0
+                    2.27453      1.5795
+
+Timing for temperature evolution: Maximum       Minimum 0
+                    0      0
+
+Timing for cell active: Maximum       Minimum 0
+                    0      0

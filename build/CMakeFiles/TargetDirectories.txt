@@ -1,0 +1,3 @@
+/home/stan/AMCA3D/build/CMakeFiles/AMCA3D.dir
+/home/stan/AMCA3D/build/CMakeFiles/edit_cache.dir
+/home/stan/AMCA3D/build/CMakeFiles/rebuild_cache.dir
