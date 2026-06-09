@@ -1,0 +1,46 @@
+# Microstructure Simulation Models in Additive Manufacturing: Differences & Limitations
+
+Based on the foundational literature, microstructure simulation models generally fall into four categories: Phase-Field methods, Cellular Automata, Kinetic Monte Carlo, and Machine Learning surrogates. Below is a concise summary of their differences and limitations.
+
+## 1. Phase-Field Method (PFM)
+PFM is a high-fidelity continuum model that uses a diffuse interface to simulate phase transitions and dendritic growth. It is often used as the ground-truth benchmark in literature [1, 2, 4].
+* **Differences:** Solves complex partial differential equations (PDEs) to naturally capture capillary effects, surface tension, and exact dendritic branching without explicit tracking rules.
+* **Limitations:** Extremely computationally expensive. It is strictly limited to micro-scale domains and cannot be practically scaled to simulate part-level components in additive manufacturing.
+
+## 2. Cellular Automata (CA)
+CA models discrete grids where cells change states (liquid/solid) based on deterministic growth rules (e.g., Rappaz-Gandin) and probabilistic nucleation [1].
+* **Differences:** Trades the high-fidelity physics of PFM for computational efficiency, allowing for mesoscale to macroscale predictions of grain size, shape, and orientation.
+* **Limitations:**
+  * **Grid Anisotropy:** Standard cubic grids cause artificial "stair-step" grain boundaries and preferred artificial growth directions. This requires geometric corrections like the "decentered octahedron" algorithm.
+  * **Temporal Errors:** Under extreme AM thermal gradients, CA suffers from "multiple grain assignment" errors, necessitating complex dynamic capture patches [2].
+
+## 3. Kinetic Monte Carlo (kMC) / Potts Model
+kMC operates on a discretized lattice where grain boundaries evolve probabilistically. Cell states flip randomly, and the flip is accepted or rejected based on whether it minimizes the system's interfacial free energy [5].
+* **Differences:** Unlike CA, which relies on strict deterministic velocity equations driven by temperature, kMC is driven by energy minimization and thermodynamic probability.
+* **Limitations:** * **Physical Time Mapping:** "Time" is tracked in abstract Monte Carlo Steps (MCS) rather than physical seconds, making it difficult to map exactly to real-world cooling rates ($K/s$).
+  * **Solidification Accuracy:** While excellent for solid-state grain growth (like post-print heat treatments), it is less accurate than CA or PFM for simulating the rapid liquid-to-solid phase change driven by undercooling kinetics.
+
+## 4. Data-Driven & Neural Cellular Automata (NCA)
+Recent approaches replace explicit physical rule-sets with neural networks that learn the local state-transition dynamics from high-fidelity data [4].
+* **Differences:** Unlike traditional CA, Neural CA (NCA) learns transition rules automatically via convolutional networks, avoiding manual geometric calibration. It applies rules iteratively to preserve temporal evolution.
+* **Limitations:** * **Data Dependency:** Predictions are inherently bound to the quality and range of the training data.
+  * **Generalizability:** Purely data-driven models may struggle to extrapolate to unseen thermodynamic boundary conditions ($G, V$) outside the initial training set.
+
+---
+
+### Summary Comparison Table
+
+| Model | Primary Mechanism | Key Advantage | Main Limitation | Reference |
+| :--- | :--- | :--- | :--- | :--- |
+| **Phase-Field (PFM)** | Diffuse interface PDEs | Highest physical accuracy (dendrites & solute) | Computationally prohibitive for part-scale | [2], [4] |
+| **Standard CA** | Discrete deterministic kinetics | Fast, scales to macroscopic parts | Grid anisotropy; temporal step errors | [1], [2] |
+| **Kinetic Monte Carlo** | Energy minimization probability | Excellent for solid-state randomness | Hard to map to exact physical time | [5] |
+| **Neural CA (NCA)** | Learned convolutional rules | Ultrafast; no manual rule calibration | Limited by training data generalizability | [4] |
+
+---
+**References:**
+1. **Zinovieva et al. (2018):** *Three-dimensional modeling of the microstructure evolution during metal additive manufacturing.* Computational Materials Science.
+2. **Shan et al. (2025):** *Adaptive capture-based cellular automata for addressing challenges in modeling grain growth competition in additive manufacturing.* Additive Manufacturing.
+3. **Keller et al. (2017):** *Application of finite element, phase-field, and CALPHAD-based methods to additive manufacturing of Ni-based superalloys.* Acta Materialia.
+4. **Tang et al. (2023):** *Neural cellular automata for solidification microstructure modelling.* Computer Methods in Applied Mechanics and Engineering.
+5. **Rodgers et al. (2017):** *Simulation of metal additive manufacturing microstructures using kinetic Monte Carlo.* Computational Materials Science.
